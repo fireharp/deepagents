@@ -1,0 +1,476 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+__init__.py
+base.py
+factory.py
+jina_provider.py
+tavily_provider.py
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path="__init__.py">
+"""Search providers module with unified interface for Tavily and Jina."""
+
+from .base import SearchProvider
+from .factory import get_search_provider_from_env
+from .tavily_provider import TavilyProvider
+from .jina_provider import JinaProvider
+
+__all__ = [
+    "SearchProvider",
+    "get_search_provider_from_env",
+    "TavilyProvider",
+    "JinaProvider",
+]
+</file>
+
+<file path="base.py">
+"""Base protocol for search providers."""
+
+from typing import Protocol, runtime_checkable
+
+
+@runtime_checkable
+class SearchProvider(Protocol):
+    """Protocol for search providers with normalized interface."""
+
+    def search(
+        self,
+        query: str,
+        max_results: int = 5,
+        include_raw_content: bool = False,
+        include_domains: list[str] | None = None,
+        topic: str | None = None,
+    ) -> dict:
+        """Search for content and return normalized results.
+
+        Args:
+            query: Search query string
+            max_results: Maximum number of results to return
+            include_raw_content: Whether to include raw page content
+            include_domains: List of domains to restrict search to
+            topic: Optional topic hint for search providers that support it
+
+        Returns:
+            Dict with "results" key containing list of normalized result items.
+            Each item has: url, title, content, and optionally raw_content, score, source.
+        """
+        ...
+</file>
+
+<file path="factory.py">
+"""Factory function for creating search providers based on environment configuration."""
+
+import os
+
+from .base import SearchProvider
+from .tavily_provider import TavilyProvider
+from .jina_provider import JinaProvider
+
+
+def get_search_provider_from_env() -> SearchProvider:
+    """Create and return a search provider based on environment configuration.
+
+    Uses SEARCH_BACKEND environment variable to determine provider:
+    - "tavily" (default): Use TavilyProvider
+    - "jina": Use JinaProvider
+
+    Returns:
+        SearchProvider instance configured from environment
+
+    Raises:
+        ValueError: If backend is unsupported or required API keys are missing
+        ImportError: If required packages are not installed
+    """
+    backend = os.environ.get("SEARCH_BACKEND", "tavily").lower()
+
+    if backend == "tavily":
+        return TavilyProvider()
+    elif backend == "jina":
+        return JinaProvider()
+    else:
+        raise ValueError(
+            f"Unsupported search backend: {backend}. Supported: tavily, jina"
+        )
+</file>
+
+<file path="jina_provider.py">
+"""Jina search provider implementation using s.jina.ai and r.jina.ai."""
+
+import os
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from urllib.parse import urlparse, quote
+
+try:
+    import httpx
+except ImportError:
+    httpx = None
+
+
+class JinaProvider:
+    """Jina search provider using s.jina.ai for discovery and r.jina.ai for content."""
+
+    def __init__(self, api_key: str | None = None):
+        if httpx is None:
+            raise ImportError("httpx package is required for JinaProvider")
+
+        self.api_key = api_key or os.environ.get("JINA_API_KEY")
+        self.fetch_concurrency = int(os.environ.get("SEARCH_FETCH_CONCURRENCY", "4"))
+        self.connect_timeout = float(os.environ.get("SEARCH_HTTP_TIMEOUT_CONNECT", "5"))
+        self.read_timeout = float(os.environ.get("SEARCH_HTTP_TIMEOUT_READ", "20"))
+
+        # Create HTTP client with timeouts and retries
+        self.client = httpx.Client(
+            timeout=httpx.Timeout(
+                connect=self.connect_timeout,
+                read=self.read_timeout,
+                write=None,
+                pool=None,
+            ),
+            limits=httpx.Limits(max_connections=10, max_keepalive_connections=5),
+        )
+
+    def __del__(self):
+        """Clean up HTTP client."""
+        if hasattr(self, "client"):
+            self.client.close()
+
+    def search(
+        self,
+        query: str,
+        max_results: int = 5,
+        include_raw_content: bool = False,
+        include_domains: list[str] | None = None,
+        topic: str | None = None,
+    ) -> dict:
+        """Search using Jina s.jina.ai and optionally fetch content with r.jina.ai."""
+        try:
+            # Step 1: Discovery via s.jina.ai
+            search_results = self._discover_urls(query, max_results)
+
+            # Step 2: Domain filtering if specified
+            if include_domains:
+                search_results = self._filter_by_domains(
+                    search_results, include_domains
+                )
+
+            # Step 3: Fetch raw content if requested
+            if include_raw_content:
+                search_results = self._hydrate_with_content(search_results)
+
+            # Add source metadata
+            for result in search_results:
+                result["source"] = "jina"
+
+            return {"results": search_results}
+
+        except Exception:
+            # Return empty results on error to match spec
+            return {"results": []}
+
+    def _discover_urls(self, query: str, max_results: int) -> list[dict]:
+        """Discover URLs using s.jina.ai search."""
+        import os
+
+        debug = os.environ.get("WINE_SEARCH_DEBUG") == "1"
+
+        if debug:
+            print(f"🔍 Jina discovery: query='{query}', max_results={max_results}")
+
+        headers = {"Accept": "application/json", "User-Agent": "deepagents/1.0"}
+        if self.api_key:
+            headers["Authorization"] = f"Bearer {self.api_key}"
+            if debug:
+                print(f"🔑 Using API key: {self.api_key[:20]}...")
+
+        try:
+            # Use the simple s.jina.ai endpoint
+            encoded_query = quote(query)
+            url = f"https://s.jina.ai/{encoded_query}"
+
+            if debug:
+                print(f"📡 Calling Jina API: {url}")
+                print(f"   Headers: {headers}")
+
+            response = self._make_request("GET", url, headers=headers)
+
+            if debug:
+                print(f"📡 Response: {response.status_code}")
+                print(
+                    f"   Content-Type: {response.headers.get('content-type', 'unknown')}"
+                )
+                print(f"📄 Raw response text: {response.text[:500]}...")
+
+            if response.status_code == 200:
+                # Check if response is JSON
+                content_type = response.headers.get("content-type", "")
+                if "application/json" in content_type:
+                    try:
+                        data = response.json()
+                        if debug:
+                            print(f"📊 JSON response keys: {list(data.keys())}")
+                        results = self._normalize_discovery_response(data, max_results)
+                        if debug:
+                            print(f"✅ API returned {len(results)} results")
+                        return results
+                    except Exception as json_error:
+                        if debug:
+                            print(f"❌ JSON parsing failed: {json_error}")
+                else:
+                    # Response might be plain text or HTML
+                    if debug:
+                        print(f"⚠️  Non-JSON response, content-type: {content_type}")
+                        print("   This might be HTML content from Jina reader")
+
+                    # Try to parse as simple text response
+                    text = response.text.strip()
+                    if text and not text.startswith("<"):  # Not HTML
+                        # Create a simple result from the text
+                        results = [
+                            {
+                                "url": f"https://search-result-for-{encoded_query}",
+                                "title": f"Search results for: {query}",
+                                "content": text[:200] + "..."
+                                if len(text) > 200
+                                else text,
+                            }
+                        ]
+                        if debug:
+                            print(f"✅ Created {len(results)} text-based results")
+                        return results
+            else:
+                if debug:
+                    print(f"❌ API error {response.status_code}: {response.text[:200]}")
+
+        except Exception as e:
+            if debug:
+                print(f"❌ API call failed: {e}")
+
+        if debug:
+            print("❌ No results found, returning empty")
+        return []
+
+    def _normalize_discovery_response(self, data: dict, max_results: int) -> list[dict]:
+        """Normalize discovery response from various possible schemas."""
+        results = []
+
+        # Try different possible response formats
+        items = data.get("results") or data.get("data") or data.get("items") or []
+
+        for item in items[:max_results]:
+            if isinstance(item, dict):
+                result = {
+                    "url": item.get("url", ""),
+                    "title": item.get("title", ""),
+                    "content": item.get("snippet", "") or item.get("content", ""),
+                }
+
+                # Only add if we have a valid URL
+                if result["url"]:
+                    results.append(result)
+
+        return results
+
+    def _filter_by_domains(
+        self, results: list[dict], include_domains: list[str]
+    ) -> list[dict]:
+        """Filter results by allowed domains."""
+        filtered = []
+
+        for result in results:
+            url = result.get("url", "")
+            if not url:
+                continue
+
+            try:
+                hostname = urlparse(url).hostname
+                if hostname and any(domain in hostname for domain in include_domains):
+                    filtered.append(result)
+            except Exception:
+                continue
+
+        return filtered
+
+    def _hydrate_with_content(self, results: list[dict]) -> list[dict]:
+        """Fetch raw content for URLs using r.jina.ai."""
+        if not results:
+            return results
+
+        # Use ThreadPoolExecutor for concurrent fetching
+        with ThreadPoolExecutor(max_workers=self.fetch_concurrency) as executor:
+            # Submit all fetch tasks
+            future_to_result = {
+                executor.submit(self._fetch_content, result["url"]): result
+                for result in results
+            }
+
+            # Collect results as they complete
+            for future in as_completed(future_to_result):
+                result = future_to_result[future]
+                try:
+                    content = future.result()
+                    if content:
+                        result["raw_content"] = content
+                except Exception:
+                    # Keep item without raw_content on fetch failure
+                    pass
+
+        return results
+
+    def _fetch_content(self, url: str) -> str:
+        """Fetch content for a single URL using r.jina.ai."""
+        try:
+            reader_url = f"https://r.jina.ai/{url}"
+            headers = {}
+            if self.api_key:
+                headers["Authorization"] = f"Bearer {self.api_key}"
+
+            response = self._make_request("GET", reader_url, headers=headers)
+
+            if response.status_code == 200:
+                return response.text
+
+        except Exception:
+            pass
+
+        return ""
+
+    def _make_request(self, method: str, url: str, **kwargs) -> httpx.Response:
+        """Make HTTP request with retries."""
+        max_retries = 2
+
+        for attempt in range(max_retries + 1):
+            try:
+                response = self.client.request(method, url, **kwargs)
+
+                # Retry on 5xx errors
+                if response.status_code >= 500 and attempt < max_retries:
+                    continue
+
+                return response
+
+            except (httpx.TimeoutException, httpx.ConnectError):
+                if attempt < max_retries:
+                    continue
+                raise
+
+        # This shouldn't be reached, but just in case
+        return self.client.request(method, url, **kwargs)
+</file>
+
+<file path="tavily_provider.py">
+"""Tavily search provider implementation."""
+
+import os
+
+try:
+    from tavily import TavilyClient
+except ImportError:
+    TavilyClient = None
+
+
+class TavilyProvider:
+    """Tavily search provider that wraps TavilyClient."""
+
+    def __init__(self, api_key: str | None = None):
+        if TavilyClient is None:
+            raise ImportError("tavily-python package is required for TavilyProvider")
+
+        self.api_key = api_key or os.environ.get("TAVILY_API_KEY")
+        if not self.api_key:
+            raise ValueError(
+                "TAVILY_API_KEY environment variable or api_key parameter is required"
+            )
+
+        self.client = TavilyClient(api_key=self.api_key)
+
+    def search(
+        self,
+        query: str,
+        max_results: int = 5,
+        include_raw_content: bool = False,
+        include_domains: list[str] | None = None,
+        topic: str | None = None,
+    ) -> dict:
+        """Search using Tavily and normalize results."""
+        try:
+            result = self.client.search(
+                query=query,
+                max_results=max_results,
+                include_raw_content=include_raw_content,
+                include_domains=include_domains,
+                topic=topic,
+            )
+
+            # Normalize the results to ensure consistent format
+            normalized_results = []
+            for item in result.get("results", []):
+                normalized_item = {
+                    "url": item.get("url", ""),
+                    "title": item.get("title", ""),
+                    "content": item.get("content", ""),
+                    "source": "tavily",
+                }
+
+                # Add raw_content if available and requested
+                if include_raw_content and "raw_content" in item:
+                    normalized_item["raw_content"] = item["raw_content"]
+                elif include_raw_content and "rawContent" in item:
+                    normalized_item["raw_content"] = item["rawContent"]
+
+                # Add score if available
+                if "score" in item:
+                    normalized_item["score"] = item["score"]
+
+                normalized_results.append(normalized_item)
+
+            return {"results": normalized_results}
+
+        except Exception:
+            # Return empty results on error to match spec
+            return {"results": []}
+</file>
+
+</files>

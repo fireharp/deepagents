@@ -1,0 +1,28 @@
+# Tantum Ergo Rose (CSV-aligned) - Correct vintage validation
+wine_query: "Tantum Ergo Rose"
+inventory_name: "Tantum Ergo Rose"
+inventory_vintage: "NV"
+
+# Ground truth outputs
+normalized_name: "Tantum Ergo Rosé"
+producer: "Hispano+Suizas"
+region: "Valencia"
+appellation: null
+vintage: "2022"
+grapes: null
+fermentation: null
+aging: null
+
+# Corrections and flags
+corrections:
+  name_mismatch: false
+  vintage_mismatch: false # Flag true if system produces different vintage
+  spelling_corrections: []
+  duplicate_flag: false
+
+notes: "Vintage must be 2022, not any other year. Probably it wasn't in the initial CSV. Then we should have asked the user to add it."
+
+metadata:
+  source: "mark_review_10aug.md"
+  category: "vintage_check"
+  issue_type: "wrong_vintage"

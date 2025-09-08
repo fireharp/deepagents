@@ -1,0 +1,28 @@
+# Finca Calvestra Merseguera (CSV-aligned) - Producer correction
+wine_query: "Finca Calvestra Merseguera"
+inventory_name: "Finca Calvestra Merseguera"
+inventory_vintage: "2023"
+
+# Ground truth outputs
+normalized_name: "Finca Calvestra Merseguera 2023"
+producer: "Bodegas Mustiguillo"
+region: "Valencia"
+appellation: null
+vintage: "2023"
+grapes: "Merseguera"
+fermentation: null
+aging: null
+
+# Corrections and flags
+corrections:
+  name_mismatch: false
+  vintage_mismatch: false
+  spelling_corrections: []
+  duplicate_flag: false
+
+notes: "Producer is 'Bodegas Mustiguillo', one of the most prestigious wineries in Valencia. NOT 'Finca Calvestra'."
+
+metadata:
+  source: "mark_review_10aug.md"
+  category: "producer_check"
+  issue_type: "wrong_producer"

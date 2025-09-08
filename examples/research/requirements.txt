@@ -1,3 +1,4 @@
-deepagents
+deepagents[qdrant]
 langgraph-cli[inmem]
 tavily-python
+psycopg2-binary

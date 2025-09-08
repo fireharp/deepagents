@@ -1,0 +1,28 @@
+# Rally white (CSV-aligned) - Spelling correction target
+wine_query: "Rally white"
+inventory_name: "Rally white"
+inventory_vintage: "2021"
+
+# Ground truth outputs
+normalized_name: "Rall White 2021"
+producer: "Rall Wines"
+region: "South Africa"
+appellation: null
+vintage: null
+grapes: null
+fermentation: null
+aging: null
+
+# Corrections and flags
+corrections:
+  name_mismatch: false
+  vintage_mismatch: false
+  spelling_corrections: ["Rall (not Rally)"]
+  duplicate_flag: false
+
+notes: "Correct name is 'Rall White', not 'Rally White 2021'."
+
+metadata:
+  source: "mark_review_10aug.md"
+  category: "spelling"
+  issue_type: "name_typo"

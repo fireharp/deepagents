@@ -1,0 +1,28 @@
+# Umbretum brut nature (CSV-aligned) - Specific sparkling details vs generic description
+wine_query: "Umbretum brut nature"
+inventory_name: "Umbretum brut nature"
+inventory_vintage: "NV"
+
+# Ground truth outputs
+normalized_name: "Umbretum Brut Nature"
+producer: null
+region: "Cádiz"
+appellation: null
+vintage: null
+grapes: "100% Garrido Fino"
+fermentation: "Traditional method (secondary fermentation in bottle)"
+aging: "24 months en rima"
+
+# Corrections and flags
+corrections:
+  name_mismatch: false
+  vintage_mismatch: false
+  spelling_corrections: []
+  duplicate_flag: false
+
+notes: "Avoid generic sparkling wine description. Must include: 100% Garrido Fino grape, 24 months 'en rima' aging, Cádiz region."
+
+metadata:
+  source: "mark_review_10aug.md"
+  category: "tech_facts"
+  issue_type: "generic_description"

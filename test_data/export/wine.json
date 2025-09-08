@@ -1,0 +1,36 @@
+{
+    "sku": "v0123",
+    "normalized_name": "Mas de Daumas Gassac Rouge",
+    "producer": "Mas de Daumas Gassac",
+    "region": "IGP Pays d'Hérault",
+    "appellation": "IGP",
+    "vintage": 2019,
+    "grapes": [
+        {
+            "name": "Cabernet Sauvignon",
+            "percent": 30
+        },
+        {
+            "name": "Merlot",
+            "percent": 30
+        },
+        {
+            "name": "Syrah / Shiraz",
+            "percent": 30
+        },
+        {
+            "name": "Grenache",
+            "percent": 10
+        }
+    ],
+    "country": "Francia",
+    "type": "Tinto",
+    "price": 29.9,
+    "stock": true,
+    "desc_es": "Tinto mediterráneo elegante...",
+    "tasting_es": "Aromas de frutos rojos, especias...",
+    "serving_temp_es": "14º - 17ºC",
+    "alcohol_by_volume": 13.5,
+    "winery_es": "Mas de Daumas Gassac",
+    "region_es": "IGP Pays d'Hérault"
+}

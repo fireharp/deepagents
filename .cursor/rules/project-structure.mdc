@@ -1,0 +1,39 @@
+---
+alwaysApply: true
+description: DeepAgents project structure and organization
+---
+
+# Project Structure Guide
+
+## Core Architecture
+
+- **Main package**: [src/deepagents/](mdc:src/deepagents/) - Core agent framework
+- **Examples**: [examples/research/](mdc:examples/research/) - Wine research implementation
+- **Tests**: [tests/](mdc:tests/) - Comprehensive test suite
+
+## Key Components
+
+### Core Framework
+- [src/deepagents/graph.py](mdc:src/deepagents/graph.py) - Main agent graph
+- [src/deepagents/model.py](mdc:src/deepagents/model.py) - LLM model handling
+- [src/deepagents/state.py](mdc:src/deepagents/state.py) - Agent state management
+- [src/deepagents/tools.py](mdc:src/deepagents/tools.py) - Core tools
+
+### Wine Research System
+- [examples/research/wine_agent.py](mdc:examples/research/wine_agent.py) - Main wine research agent
+- [examples/research/wine_models.py](mdc:examples/research/wine_models.py) - Wine data models
+- [examples/research/export/](mdc:examples/research/export/) - WooCommerce CSV export system
+
+### Database Integration
+- **Qdrant**: [src/deepagents/qdrant/](mdc:src/deepagents/qdrant/) - Vector database
+- **Neon PostgreSQL**: [examples/research/run_store.py](mdc:examples/research/run_store.py) - Run persistence
+
+### Search Providers
+- [src/deepagents/search/](mdc:src/deepagents/search/) - Search abstraction layer
+- Supports Tavily and Jina search backends
+
+## Progress Tracking
+
+- Keep progress in `PROGRESS.md` files in each project/folder
+- Use format: TS, PROBLEM, WHAT WAS DONE, MEMO
+- Keep it short and concise

@@ -1,0 +1,28 @@
+# Nivarius Finca la nevera (CSV-aligned) - Fermentation correction
+wine_query: "Nivarius Finca la nevera"
+inventory_name: "Nivarius Finca la nevera"
+inventory_vintage: "2017"
+
+# Ground truth outputs
+normalized_name: "Nivarius Finca La Nevera 2017"
+producer: "Nivarius"
+region: "Rioja"
+appellation: null
+vintage: "2017"
+grapes: null
+fermentation: "Stainless steel"
+aging: "36 months (stainless steel)"
+
+# Corrections and flags
+corrections:
+  name_mismatch: false
+  vintage_mismatch: false
+  spelling_corrections: []
+  duplicate_flag: false
+
+notes: "Must NOT say fermented in French barrels. Correct fermentation is stainless steel."
+
+metadata:
+  source: "mark_review_10aug.md"
+  category: "tech_facts"
+  issue_type: "fermentation_method"

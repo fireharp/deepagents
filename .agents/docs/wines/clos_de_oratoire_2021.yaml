@@ -1,0 +1,28 @@
+# Clos de l'Oratorie St Emilion Gran Cru Classé (CSV-aligned) - Duplication flag
+wine_query: "Clos de l'Oratorie St Emilion Gran Cru Classé"
+inventory_name: "Clos de l'Oratorie St Emilion Gran Cru Classé"
+inventory_vintage: "2021"
+
+# Ground truth outputs
+normalized_name: "Clos de l'Oratorie St Emilion Gran Cru Classé 2021"
+producer: null
+region: "Bordeaux"
+appellation: "Saint-Émilion Grand Cru Classé"
+vintage: "2021"
+grapes: null
+fermentation: null
+aging: null
+
+# Corrections and flags
+corrections:
+  name_mismatch: false
+  vintage_mismatch: false
+  spelling_corrections: []
+  duplicate_flag: true # This wine appears multiple times in output
+
+notes: "Should be deduplicated when multiple entries are detected in the same output."
+
+metadata:
+  source: "mark_review_10aug.md"
+  category: "dedup"
+  issue_type: "duplicate_entries"

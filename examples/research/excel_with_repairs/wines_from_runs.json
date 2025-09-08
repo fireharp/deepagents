@@ -1,0 +1,881 @@
+[
+  {
+    "sku": "wine_nivarius_finca_la_nevera_2017",
+    "normalized_name": "Nivarius Finca La Nevera",
+    "producer": "Nivarius",
+    "region": "Rioja, Spain",
+    "appellation": "Rioja DOCa",
+    "vintage": 2017,
+    "grapes": [
+      {
+        "name": "Maturana Blanca",
+        "percent": 100,
+        "sources": [
+          {
+            "link": "https://shop.klwines.com/products/details/1730061",
+            "extract": "The 2017 Finca La Nevera is now 100% Maturana Blanca planted at their highest-altitude vineyard at 850 meters. It fermented in 3,500-liter oak casks, where it matured for three years, the first year with the full lees."
+          },
+          {
+            "link": "https://palaciosvinosdefinca.com/producto/finca-la-nevera/",
+            "extract": "100% Maturana blanca."
+          },
+          {
+            "link": "https://www.vivino.com/US/es/nivarius-finca-la-nevera/w/7126673?srsltid=AfmBOopryTsEusme052G_smSlwO6ZzxXkz9EHNeyQkBZK0J-g5yIKqh1",
+            "extract": "Uvas: Maturana Blanca"
+          }
+        ]
+      }
+    ],
+    "country": "España",
+    "type": "Tinto",
+    "alcohol_by_volume": "13.5% - 14%",
+    "price": 25.0,
+    "stock": true,
+    "desc_es": {
+      "tasting_notes": [
+        {
+          "source": "K&L Wine Merchants (Tim Atkin)",
+          "notes": "Tangy citrus fruit, hints of aniseed and white pepper."
+        },
+        {
+          "source": "K&L Wine Merchants (Wine Enthusiast)",
+          "notes": "Green pear, pineapple, white chocolate, a touch of aniseed (aromas); clementine, lemon-zest, green-apple, vanilla flavors, notes of fennel pollen and seawater (finish)."
+        },
+        {
+          "source": "K&L Wine Merchants (Wine Advocate)",
+          "notes": "Aromatic, floral, delicate, integrated oak, fresh mouthfeel, moderate ripeness, clean, vibrant."
+        },
+        {
+          "source": "Vivino (User Reviews)",
+          "notes": "Pear, apple, apricot (tree fruit); oak, vanilla, caramel (oak notes); citrus, lemon, lime (citrus notes); grilled pineapple (tropical notes); petroleum (earthy notes)."
+        }
+      ],
+      "flavor_profile": [
+        {
+          "source": "K&L Wine Merchants (Wine Enthusiast)",
+          "profile": "Full-bodied with bold acidity and a palpable sense of stoniness."
+        },
+        {
+          "source": "Vivino (User Summary)",
+          "profile": "Ranges from light to powerful, dry to sweet, and weak to acidic. Predominantly fruity with oak and citrus undertones."
+        }
+      ],
+      "characteristics": [
+        {
+          "source": "K&L Wine Merchants (Tim Atkin)",
+          "characteristics": "Energy and vivacity, chiselled acidity, stony salty reduction."
+        },
+        {
+          "source": "K&L Wine Merchants (Wine Advocate)",
+          "characteristics": "Great freshness and acidity of the Maturana Blanca variety; tasty and undeveloped."
+        },
+        {
+          "source": "Vivino",
+          "characteristics": "White wine, Maturana Blanca grape, from Rioja, Spain."
+        }
+      ],
+      "wine_review_summary": [
+        {
+          "source": "K&L Wine Merchants (Tim Atkin)",
+          "summary": "A sublime expression of Maturana Blanca from Finca La Nevera, one of Rioja's highest vineyards, showing chiselled acidity and complex fruit and spice notes."
+        },
+        {
+          "source": "K&L Wine Merchants (Wine Enthusiast)",
+          "summary": "Made with the obscure Maturana Blanca, offering diverse aromas and flavors with bold acidity and a pleasing finish."
+        },
+        {
+          "source": "K&L Wine Merchants (Wine Advocate)",
+          "summary": "100% Maturana Blanca, matured in oak and then stainless steel, resulting in an aromatic, floral, and fresh wine with significant acidity."
+        }
+      ]
+    },
+    "aging_es": "The Nivarius Finca La Nevera 2017 undergoes fermentation in large French oak vats/barrels. It then matures for a minimum of 36 months (3 years). The first year involves aging on full/regular lees with periodic stirring. Subsequently, the wine continues aging in stainless steel tanks, with very little lees stirring in the second year and no stirring in the third year. It is bottled and released after this aging period.",
+    "fermentation_es": "Fermentation occurs in large French oak barrels with controlled temperature. The wine is then aged for a minimum of 36 months in stainless steel tanks, where the lees are periodically stirred. Malolactic fermentation is not explicitly stated, but suggested by lees stirring. No information about wild yeast.",
+    "soil_es": "Sandy soil of degradative origin from colluvial rocks, with siliceous sands mixed with silts containing calcium carbonates accumulated by washing, and a light layer of clay at the bottom that retains water."
+  },
+  {
+    "sku": "wine_mas_de_daumas_gassac_rouge_2021_2021",
+    "normalized_name": "Mas de Daumas Gassac Red",
+    "producer": "Mas de Daumas Gassac",
+    "region": "IGP St Guilhem-le-Désert - Cité d'Aniane",
+    "appellation": "IGP St Guilhem-le-Désert - Cité d'Aniane",
+    "vintage": 2021,
+    "grapes": [
+      {
+        "name": "Cabernet Sauvignon",
+        "percent": 84.0,
+        "sources": [
+          {
+            "link": "https://www.daumas-gassac.com/en/millesime/mas-de-daumas-gassac-red-2021/",
+            "extract": "Technical sheet\n---------------\n\n**GRAPE VARIETIES:**\n\n– Cabernet Sauvignon 84%,\n\n – Pinot Noir 5%,\n\n – Merlot 2%,\n\n – Petit Verdot 2%,\n\n – Tannat 2%,\n\n – Cabernet Franc 2%,\n\n – Rare varieties 3 %: Nielluccio, Montepulciano (Italie), Saperavi (Géorgie), Carménère (France), Tempranillo (Espagne) Abouriou (France)."
+          }
+        ]
+      },
+      {
+        "name": "Pinot Noir",
+        "percent": 5.0,
+        "sources": [
+          {
+            "link": "https://www.daumas-gassac.com/en/millesime/mas-de-daumas-gassac-red-2021/",
+            "extract": "Technical sheet\n---------------\n\n**GRAPE VARIETIES:**\n\n– Cabernet Sauvignon 84%,\n\n – Pinot Noir 5%,\n\n – Merlot 2%,\n\n – Petit Verdot 2%,\n\n – Tannat 2%,\n\n – Cabernet Franc 2%,\n\n – Rare varieties 3 %: Nielluccio, Montepulciano (Italie), Saperavi (Géorgie), Carménère (France), Tempranillo (Espagne) Abouriou (France)."
+          }
+        ]
+      },
+      {
+        "name": "Merlot",
+        "percent": 2.0,
+        "sources": [
+          {
+            "link": "https://www.daumas-gassac.com/en/millesime/mas-de-daumas-gassac-red-2021/",
+            "extract": "Technical sheet\n---------------\n\n**GRAPE VARIETIES:**\n\n– Cabernet Sauvignon 84%,\n\n – Pinot Noir 5%,\n\n – Merlot 2%,\n\n – Petit Verdot 2%,\n\n – Tannat 2%,\n\n – Cabernet Franc 2%,\n\n – Rare varieties 3 %: Nielluccio, Montepulciano (Italie), Saperavi (Géorgie), Carménère (France), Tempranillo (Espagne) Abouriou (France)."
+          }
+        ]
+      },
+      {
+        "name": "Petit Verdot",
+        "percent": 2.0,
+        "sources": [
+          {
+            "link": "https://www.daumas-gassac.com/en/millesime/mas-de-daumas-gassac-red-2021/",
+            "extract": "Technical sheet\n---------------\n\n**GRAPE VARIETIES:**\n\n– Cabernet Sauvignon 84%,\n\n – Pinot Noir 5%,\n\n – Merlot 2%,\n\n – Petit Verdot 2%,\n\n – Tannat 2%,\n\n – Cabernet Franc 2%,\n\n – Rare varieties 3 %: Nielluccio, Montepulciano (Italie), Saperavi (Géorgie), Carménère (France), Tempranillo (Espagne) Abouriou (France)."
+          }
+        ]
+      },
+      {
+        "name": "Tannat",
+        "percent": 2.0,
+        "sources": [
+          {
+            "link": "https://www.daumas-gassac.com/en/millesime/mas-de-daumas-gassac-red-2021/",
+            "extract": "Technical sheet\n---------------\n\n**GRAPE VARIETIES:**\n\n– Cabernet Sauvignon 84%,\n\n – Pinot Noir 5%,\n\n – Merlot 2%,\n\n – Petit Verdot 2%,\n\n – Tannat 2%,\n\n – Cabernet Franc 2%,\n\n – Rare varieties 3 %: Nielluccio, Montepulciano (Italie), Saperavi (Géorgie), Carménère (France), Tempranillo (Espagne) Abouriou (France)."
+          }
+        ]
+      },
+      {
+        "name": "Cabernet Franc",
+        "percent": 2.0,
+        "sources": [
+          {
+            "link": "https://www.daumas-gassac.com/en/millesime/mas-de-daumas-gassac-red-2021/",
+            "extract": "Technical sheet\n---------------\n\n**GRAPE VARIETIES:**\n\n– Cabernet Sauvignon 84%,\n\n – Pinot Noir 5%,\n\n – Merlot 2%,\n\n – Petit Verdot 2%,\n\n – Tannat 2%,\n\n – Cabernet Franc 2%,\n\n – Rare varieties 3 %: Nielluccio, Montepulciano (Italie), Saperavi (Géorgie), Carménère (France), Tempranillo (Espagne) Abouriou (France)."
+          }
+        ]
+      },
+      {
+        "name": "Nielluccio",
+        "percent": null,
+        "sources": [
+          {
+            "link": "https://www.daumas-gassac.com/en/millesime/mas-de-daumas-gassac-red-2021/",
+            "extract": "Technical sheet\n---------------\n\n**GRAPE VARIETIES:**\n\n– Cabernet Sauvignon 84%,\n\n – Pinot Noir 5%,\n\n – Merlot 2%,\n\n – Petit Verdot 2%,\n\n – Tannat 2%,\n\n – Cabernet Franc 2%,\n\n – Rare varieties 3 %: Nielluccio, Montepulciano (Italie), Saperavi (Géorgie), Carménère (France), Tempranillo (Espagne) Abouriou (France)."
+          }
+        ]
+      },
+      {
+        "name": "Montepulciano",
+        "percent": null,
+        "sources": [
+          {
+            "link": "https://www.daumas-gassac.com/en/millesime/mas-de-daumas-gassac-red-2021/",
+            "extract": "Technical sheet\n---------------\n\n**GRAPE VARIETIES:**\n\n– Cabernet Sauvignon 84%,\n\n – Pinot Noir 5%,\n\n – Merlot 2%,\n\n – Petit Verdot 2%,\n\n – Tannat 2%,\n\n – Cabernet Franc 2%,\n\n – Rare varieties 3 %: Nielluccio, Montepulciano (Italie), Saperavi (Géorgie), Carménère (France), Tempranillo (Espagne) Abouriou (France)."
+          }
+        ]
+      },
+      {
+        "name": "Saperavi",
+        "percent": null,
+        "sources": [
+          {
+            "link": "https://www.daumas-gassac.com/en/millesime/mas-de-daumas-gassac-red-2021/",
+            "extract": "Technical sheet\n---------------\n\n**GRAPE VARIETIES:**\n\n– Cabernet Sauvignon 84%,\n\n – Pinot Noir 5%,\n\n – Merlot 2%,\n\n – Petit Verdot 2%,\n\n – Tannat 2%,\n\n – Cabernet Franc 2%,\n\n – Rare varieties 3 %: Nielluccio, Montepulciano (Italie), Saperavi (Géorgie), Carménère (France), Tempranillo (Espagne) Abouriou (France)."
+          }
+        ]
+      },
+      {
+        "name": "Carménère",
+        "percent": null,
+        "sources": [
+          {
+            "link": "https://www.daumas-gassac.com/en/millesime/mas-de-daumas-gassac-red-2021/",
+            "extract": "Technical sheet\n---------------\n\n**GRAPE VARIETIES:**\n\n– Cabernet Sauvignon 84%,\n\n – Pinot Noir 5%,\n\n – Merlot 2%,\n\n – Petit Verdot 2%,\n\n – Tannat 2%,\n\n – Cabernet Franc 2%,\n\n – Rare varieties 3 %: Nielluccio, Montepulciano (Italie), Saperavi (Géorgie), Carménère (France), Tempranillo (Espagne) Abouriou (France)."
+          }
+        ]
+      },
+      {
+        "name": "Tempranillo",
+        "percent": null,
+        "sources": [
+          {
+            "link": "https://www.daumas-gassac.com/en/millesime/mas-de-daumas-gassac-red-2021/",
+            "extract": "Technical sheet\n---------------\n\n**GRAPE VARIETIES:**\n\n– Cabernet Sauvignon 84%,\n\n – Pinot Noir 5%,\n\n – Merlot 2%,\n\n – Petit Verdot 2%,\n\n – Tannat 2%,\n\n – Cabernet Franc 2%,\n\n – Rare varieties 3 %: Nielluccio, Montepulciano (Italie), Saperavi (Géorgie), Carménère (France), Tempranillo (Espagne) Abouriou (France)."
+          }
+        ]
+      },
+      {
+        "name": "Abouriou",
+        "percent": null,
+        "sources": [
+          {
+            "link": "https://www.daumas-gassac.com/en/millesime/mas-de-daumas-gassac-red-2021/",
+            "extract": "Technical sheet\n---------------\n\n**GRAPE VARIETIES:**\n\n– Cabernet Sauvignon 84%,\n\n – Pinot Noir 5%,\n\n – Merlot 2%,\n\n – Petit Verdot 2%,\n\n – Tannat 2%,\n\n – Cabernet Franc 2%,\n\n – Rare varieties 3 %: Nielluccio, Montepulciano (Italie), Saperavi (Géorgie), Carménère (France), Tempranillo (Espagne) Abouriou (France)."
+          }
+        ]
+      }
+    ],
+    "country": "España",
+    "type": "Tinto",
+    "alcohol_by_volume": 13,
+    "price": 25.0,
+    "stock": true,
+    "desc_es": "The Mas de Daumas Gassac Red 2021 can be enjoyed at different stages of its life, revealing various characteristics.\n\n**Tasting Hints:**\n*   **Serving Temperature:** Serve between 18° and 19°C (64-66°F), preferably in a balloon glass.\n*   **Preparation:** Uncork three or four hours before serving, recorking the bottle. Decanting is recommended to express its complexities.\n*   **Enjoyment:** Enjoy young (within 3 years) for superb fruit aromas. After its fifth year, or up to 15-20 years, it develops characteristics of a great laying-down wine.\n\n**The Five Lives of Mas de Daumas Gassac Red Wines (general characteristics of the red wines, applicable to 2021 vintage as it ages):**\n*   **Period of fruit (first autumn after bottling):** Presents a true 'basket of fruit' with hints of future development.\n*   **Period of youth (three to seven years):** Characterized by crisp fruit and prominent tannins; a delicious and invigorating wine.\n*   **Period of maturity (seven to fourteen years):** Velvety tannins emerge as fruit flavors soften, revealing true complexity.\n*   **Period of plenitude (fourteen to twenty-one years):** Fruity flavors fade, giving way to tertiary aromas such as dried roses, woodland moss, truffles, and game.\n*   **Period of dreams (over twenty-one years):** If cellared properly, the wine continues to evolve, developing magical flavors.",
+    "aging_es": "The Mas de Daumas Gassac Red 2021 undergoes long fermentation and maceration. Maturation takes place for 12 to 15 months in oak barrels (1 to 7 years old barrels).",
+    "fermentation_es": "Mas de Daumas Gassac Red undergoes slow, cool fermentation primarily using wild yeasts. The fermentation takes place in stainless steel vats. Following fermentation, the wine is aged in oak barrels for 12 to 15 months; fermentation does not occur in oak. While not explicitly stated, the use of wild yeast and absence of sulfur in red wine vinification suggests that malolactic fermentation likely occurs naturally.",
+    "soil_es": "Red Glacial deposits"
+  },
+  {
+    "sku": "wine_mas_de_daumas_gassac_rouge_2013",
+    "normalized_name": "Mas de Daumas Gassac Rouge",
+    "producer": "Mas de Daumas Gassac",
+    "region": "Languedoc",
+    "appellation": "IGP Saint Guilhem le Desert",
+    "vintage": 2013,
+    "grapes": [
+      {
+        "name": "Cabernet Sauvignon",
+        "percent": null,
+        "sources": [
+          {
+            "link": "https://sg.cruworldwine.com/producers/mas-de-daumas-gassac/",
+            "extract": "Predominantly (70% to 80%) Cabernet Sauvignon"
+          },
+          {
+            "link": "https://eu.cruworldwine.com/producers/mas-de-daumas-gassac?limit=all",
+            "extract": "Predominantly (70% to 80%) Cabernet Sauvignon"
+          }
+        ]
+      },
+      {
+        "name": "Cabernet Sauvignon",
+        "percent": 76,
+        "sources": [
+          {
+            "link": "https://www.daumas-gassac.com/en/millesime/mas-de-daumas-gassac-rouge-2022/",
+            "extract": "Cabernet Sauvignon 76 %"
+          }
+        ]
+      },
+      {
+        "name": "Tannat",
+        "percent": 5,
+        "sources": [
+          {
+            "link": "https://www.daumas-gassac.com/en/millesime/mas-de-daumas-gassac-rouge-2022/",
+            "extract": "Tannat 5 %"
+          }
+        ]
+      },
+      {
+        "name": "Merlot",
+        "percent": 4,
+        "sources": [
+          {
+            "link": "https://www.daumas-gassac.com/en/millesime/mas-de-daumas-gassac-rouge-2022/",
+            "extract": "Merlot 4 %"
+          }
+        ]
+      },
+      {
+        "name": "Pinot Noir",
+        "percent": 3,
+        "sources": [
+          {
+            "link": "https://www.daumas-gassac.com/en/millesime/mas-de-daumas-gassac-rouge-2022/",
+            "extract": "Pinot Noir 3 %"
+          }
+        ]
+      },
+      {
+        "name": "Petit Verdot",
+        "percent": 3,
+        "sources": [
+          {
+            "link": "https://www.daumas-gassac.com/en/millesime/mas-de-daumas-gassac-rouge-2022/",
+            "extract": "Petit Verdot 3 %"
+          }
+        ]
+      },
+      {
+        "name": "Syrah",
+        "percent": 3,
+        "sources": [
+          {
+            "link": "https://www.daumas-gassac.com/en/millesime/mas-de-daumas-gassac-rouge-2022/",
+            "extract": "Syrah 3 %"
+          }
+        ]
+      },
+      {
+        "name": "Cabernet Franc",
+        "percent": 2,
+        "sources": [
+          {
+            "link": "https://www.daumas-gassac.com/en/millesime/mas-de-daumas-gassac-rouge-2022/",
+            "extract": "Cabernet Franc 2 %"
+          }
+        ]
+      },
+      {
+        "name": "Rare varieties (Nielluccio, Montepulciano, Saperavi, Carménère, Tempranillo, Abouriou)",
+        "percent": 4,
+        "sources": [
+          {
+            "link": "https://www.daumas-gassac.com/en/millesime/mas-de-daumas-gassac-rouge-2022/",
+            "extract": "Rare varieties 4 % : Nielluccio, Montepulciano (Italie), Saperavi (Géorgie), Carménère (Chili), Tempranillo (Espagne) Abouriou (France)."
+          }
+        ]
+      }
+    ],
+    "country": "España",
+    "type": "Tinto",
+    "alcohol_by_volume": 13.5,
+    "price": 25.0,
+    "stock": true,
+    "desc_es": "The 2013 IGP Saint Guilhem le Desert features leafy, cassis and black cherry notes. It's medium to full-bodied and silky in texture, with lingering hints of vanilla and tobacco on the finish. Potent and concentrated, it should drink well through at least 2025.",
+    "aging_es": "Aged for 12-15 months in oak before bottling.",
+    "fermentation_es": "Slow, cool fermentation using indigenous/wild yeasts, followed by malolactic fermentation. The wine undergoes long fermentation and maceration.",
+    "soil_es": "Red Glacial deposits"
+  },
+  {
+    "sku": "wine_los_loros_la_bota_de_mateo_2023",
+    "normalized_name": "Los Loros La Bota de Mateo",
+    "producer": "Los Loros",
+    "region": "Valle del Güímar, Tenerife, Canary Islands, Spain",
+    "appellation": "D.O. Valle del Güímar",
+    "vintage": 2023,
+    "grapes": [
+      {
+        "name": "Listán Blanco",
+        "percent": 100,
+        "sources": [
+          {
+            "link": "http://www.josepastorselections.com/uploads/1/3/9/1/13912267/la_bota_de_mateo_tech_sheet.pdf",
+            "extract": "Varieties: 100% Listán Blanco."
+          },
+          {
+            "link": "https://www.aporvino.com/vinos-de-las-islas-canarias/13314-cvne/los-loros-la-bota-de-mateo-2021.html",
+            "extract": "Elaborado al 100% con Listán Blanco"
+          },
+          {
+            "link": "https://leonandsonwine.com/products/no-data-641?srsltid=AfmBOops6T_DcIea1MnpFEriX0nz3ef4aVqar0r4AeTsyNb2W9oRwG4f",
+            "extract": "Grapes [Listan Blanco]"
+          },
+          {
+            "link": "https://willistonparkwines.com/products/juan-francisco-farina-la-bota-de-mateo?srsltid=AfmBOopsThfu-KweFp3mBgf_A1YpgpVwXqM6A5SKA53HSPfVwSHwhsmW",
+            "extract": "Listán Blanco"
+          }
+        ]
+      }
+    ],
+    "country": "España",
+    "type": "Tinto",
+    "alcohol_by_volume": "",
+    "price": 25.0,
+    "stock": true,
+    "desc_es": "Fruity and mineral character, with slight manzanilla aromas due to aging in old casks. Described as a fine and tasty wine with higher acidity than sherry wines.",
+    "aging_es": "11 months on the lees in old casks previously wrapped with manzanilla de Sanlúcar.",
+    "fermentation_es": "Alcoholic fermentation with native yeasts in old casks (previously wrapped with Manzanilla de Sanlúcar), remaining on the lees for 11 months.",
+    "soil_es": "volcanic stone and clay"
+  },
+  {
+    "sku": "wine_domaine_bousquet_malbec_ar_bio_154_2023",
+    "normalized_name": "Domaine Bousquet Premium Organic Malbec",
+    "producer": "Domaine Bousquet",
+    "region": "Uco Valley, Mendoza, Argentina",
+    "appellation": "Uco Valley",
+    "vintage": 2023,
+    "grapes": [
+      {
+        "name": "Malbec",
+        "percent": 100,
+        "sources": [
+          {
+            "link": "https://domainebousquet.com/en/wine/premium-malbec/",
+            "extract": "100% Malbec, fermented in stainless steel tanks to preserve its varietal typicity and achieve a fruity and expressive character."
+          },
+          {
+            "link": "https://finewinecellars.us/collections/90-points-and-over-20-and-under/products/domaine-bousquet-malbec-2023",
+            "extract": "Varietal or Region: MALBEC"
+          },
+          {
+            "link": "https://www.vintagewineshoppe.net/product-page/2023-domaine-bousquet-premium-organic-malbec",
+            "extract": "100% Malbec, fermented in stainless steel tanks to preserve its varietal typicity and achieve a fruity and expressive character."
+          }
+        ]
+      }
+    ],
+    "country": "España",
+    "type": "Tinto",
+    "alcohol_by_volume": 14.0,
+    "price": 25.0,
+    "stock": true,
+    "desc_es": "It is a wine of dark violet color. In the nose, it presents intense aromas of blackberry with notes of red and blackcurrant and plum. The mouth highlights notes of ripe plums with soft and elegant tannins. Bright black fruits jump from the glass. It has a nice creamy texture that permeates the wine, but it also stays fresh and bright fruited on the nice finish.",
+    "aging_es": "The Domaine Bousquet Malbec 2023 is 100% Malbec, fermented in stainless steel tanks. It is unoaked.",
+    "fermentation_es": "The Domaine Bousquet Malbec (Premium Organic Malbec) is fermented in stainless steel tanks to preserve its varietal typicity and achieve a fruity and expressive character. The wine is unoaked. No specific information was found regarding wild yeast or malolactic fermentation.",
+    "soil_es": "Sandy soil. The sandy soil is phylloxera-resistant, results in low fertility for desirable vine stress, and is permeable for good drainage."
+  },
+  {
+    "sku": "wine_do_ferreiro_cepas_vellas_2023",
+    "normalized_name": "Do Ferreiro Cepas Vellas Albariño",
+    "producer": "Do Ferreiro (Bodegas Gerardo Méndez)",
+    "region": "Rías Baixas, Galicia, Spain (specifically Salnés Valley)",
+    "appellation": "Rias Baixas (DO)",
+    "vintage": 2023,
+    "grapes": [
+      {
+        "name": "Albariño",
+        "percent": 100,
+        "sources": [
+          {
+            "link": "https://www.vino-vi.com/en/white-wine/3032-do-ferreiro-cepas-vellas-2023.html",
+            "extract": "Grape Varieties: 100% Albariño. ... Made from 100% Albariño"
+          },
+          {
+            "link": "https://www.backroomwines.com/do-ferreiro-cepas-vellas-albarino-2023.html?srsltid=AfmBOopMf3g8cv8lQGpzAaoWBCkipWtmmz1XM9kcd9-DbeYsj8KGj-ri",
+            "extract": "Grape | Albarino"
+          },
+          {
+            "link": "https://demaisonselections.com/portfolio-items/df-cepasvellas/",
+            "extract": "Grapes: Albariño"
+          },
+          {
+            "link": "https://www.winesolutions.com/products/2021-bodegas-gerardo-mendez-albarino-do-ferreiro-cepas-vellas2021-bodegas-gerardo-mendez-albarino-do-ferreiro-cepas-vellas?srsltid=AfmBOopZULvSdR76g3ojcluP4sPi-qSltp47LEeOohDYMjPGzvtRSiA0",
+            "extract": "Grapes: Albariño"
+          },
+          {
+            "link": "https://vinonueva.com/products/do-ferreiro-albarino-rias-baixas-cepas-vellas-2022?srsltid=AfmBOooiP3lCBvn_dOh82HM-OBXNOM_cumqdBrLdSNlh97lIs0Fp7Mk9",
+            "extract": "Varietal: Albariño"
+          }
+        ]
+      }
+    ],
+    "country": "España",
+    "type": "Tinto",
+    "alcohol_by_volume": 12.5,
+    "price": 25.0,
+    "stock": true,
+    "desc_es": "Do Ferreiro Cepas Vellas Albariño 2023 exhibits pear, peach, tropical fruit, and floral aromas, with high acidity and a saline texture. It is described as a serious and delicate wine with an expressive, balanced, and elegant nose. Aromas include floral fragrances, stone-white fruits, citrus, mineral, and saline notes. The palate is flavorsome with a beautifully creamy texture and length, perfectly integrated acidity, and a saline quality.",
+    "aging_es": "Do Ferreiro Cepas Vellas Albariño 2023 is aged for approximately 11 to 12 months on its fine lees in temperature-controlled stainless steel tanks. Fermentation also occurs in stainless steel with native yeasts. There is no barrel aging.",
+    "fermentation_es": "Fermentation with native yeasts occurs in temperature-controlled stainless steel tanks. The wine undergoes 11 months of aging on the lees without stirring, implying no malolactic fermentation.",
+    "soil_es": "Decomposed granitic soil, characteristic of the Salnés subzone in Rías Baixas. While a specific soil composition for the 'Cepas Vellas' vineyard was not explicitly detailed, the region where it is located is known for this soil type."
+  },
+  {
+    "sku": "wine_contino_blanco_rioja_2021",
+    "normalized_name": "Contino Blanco",
+    "producer": "Viñedos del Contino (part of CVNE - Compañía Vinícola del Norte de España)",
+    "region": "Rioja",
+    "appellation": "Rioja DOCa",
+    "vintage": 2021,
+    "grapes": [
+      {
+        "name": "Viura",
+        "percent": 90,
+        "sources": [
+          {
+            "link": "https://cvne.com/en/wines/contino-white/",
+            "extract": "Grape Variety\n\n90% viura\n\n10% garnacha blanca"
+          }
+        ]
+      },
+      {
+        "name": "Garnacha Blanca",
+        "percent": 10,
+        "sources": [
+          {
+            "link": "https://cvne.com/en/wines/contino-white/",
+            "extract": "Grape Variety\n\n90% viura\n\n10% garnacha blanca"
+          }
+        ]
+      }
+    ],
+    "country": "España",
+    "type": "Tinto",
+    "alcohol_by_volume": 12.4,
+    "price": 25.0,
+    "stock": true,
+    "aging_es": "30% of the wine is transferred to a concrete tank, while the remaining 70% goes into new and used barrels of different types and capacities, ranging between 400 litres and 500 litres, where it remains for ten months.",
+    "fermentation_es": "Grapes are destemmed and undergo pellicular maceration in stainless steel tanks for a few hours. Alcoholic fermentation then takes place in stainless steel tanks and lasts for 20 days. After fermentation, 30% of the wine is transferred to a concrete tank, and the remaining 70% is aged for ten months in new and used oak barrels (400-500 litres). There is no specific information found regarding the use of wild yeast or whether malolactic fermentation occurs.",
+    "soil_es": "The Garnacha Blanca grape is grown on calcareous clay soil. The Viura grape comes from different areas, including alluvial soils and stony soils."
+  },
+  {
+    "sku": "wine_château_carbonneau_sequoia_magnum_2023",
+    "normalized_name": "Château Carbonneau Séquoia Magnum",
+    "producer": "Chateau Carbonneau",
+    "region": "Sainte-Foy Cotes de Bordeaux, France",
+    "appellation": "Sainte-Foy Côtes de Bordeaux",
+    "vintage": 2023,
+    "grapes": [
+      {
+        "name": "Merlot",
+        "percent": 57,
+        "sources": [
+          {
+            "link": "https://www.wine-searcher.com/find/charbonneau+cuvee+sequoia+st+foy+cote+de+bordeaux+france?srsltid=AfmBOoox_enYN7LuZBfDkRfWb-gvKzRiczYBFCqur_0nOcYnHGEyzwxY",
+            "extract": "Grape Variety / Blend: Bordeaux Blend Red: 57% Merlot, 27% Cabernet Sauvignon, 16% Cabernet Franc"
+          }
+        ]
+      },
+      {
+        "name": "Cabernet Sauvignon",
+        "percent": 27,
+        "sources": [
+          {
+            "link": "https://www.wine-searcher.com/find/charbonneau+cuvee+sequoia+st+foy+cote+de+bordeaux+france?srsltid=AfmBOoox_enYN7LuZBfDkRfWb-gvKzRiczYBFCqur_0nOcYnHGEyzwxY",
+            "extract": "Grape Variety / Blend: Bordeaux Blend Red: 57% Merlot, 27% Cabernet Sauvignon, 16% Cabernet Franc"
+          }
+        ]
+      },
+      {
+        "name": "Cabernet Franc",
+        "percent": 16,
+        "sources": [
+          {
+            "link": "https://www.wine-searcher.com/find/charbonneau+cuvee+sequoia+st+foy+cote+de+bordeaux+france?srsltid=AfmBOoox_enYN7LuZBfDkRfWb-gvKzRiczYBFCqur_0nOcYnHGEyzwxY",
+            "extract": "Grape Variety / Blend: Bordeaux Blend Red: 57% Merlot, 27% Cabernet Sauvignon, 16% Cabernet Franc"
+          }
+        ]
+      }
+    ],
+    "country": "España",
+    "type": "Tinto",
+    "alcohol_by_volume": 14.5,
+    "price": 25.0,
+    "stock": true,
+    "desc_es": "General tasting notes for Château Carbonneau Sequoia describe it as having an elegant garnet color, a complex nose of red fruit highlighted by fresh spices and clove, a fleshy palate with smooth tannins, and black fruit with a hint of toast. The wine is generally noted to be ready to drink now or age for another 5 to 10 years.",
+    "aging_es": "Aged for 10 months in French oak barrels.",
+    "fermentation_es": "Fermentation lasts 17 days at 26°C, followed by a total of 19 days of maceration.",
+    "soil_es": "clay and limestone"
+  },
+  {
+    "sku": "wine_chapoutier_crozes_hermitage_2023",
+    "normalized_name": "M. Chapoutier Les Meysonniers Crozes-Hermitage",
+    "producer": "M. Chapoutier",
+    "region": "Crozes-Hermitage, Rhône Valley",
+    "appellation": "Crozes-Hermitage",
+    "vintage": 2023,
+    "grapes": [
+      {
+        "name": "Syrah",
+        "percent": 100,
+        "sources": [
+          {
+            "link": "https://www.chapoutier.com/en/shop/les-meysonniers/2023/101",
+            "extract": "Grape variety/varieties: 100% Syrah."
+          }
+        ]
+      }
+    ],
+    "country": "España",
+    "type": "Tinto",
+    "alcohol_by_volume": 12.5,
+    "price": 25.0,
+    "stock": true,
+    "desc_es": "Appearance: very intense purplish red. Nose: red fruits, blackcurrant and raspberry, followed by violet aromas. Palate: ample and round, final of stewed fruits and vanilla. Sommelier's advice: \"Les Meyonniers\" is a wine with fleshy tannins, and loads of floral and black fruit notes, as well as elegance.",
+    "aging_es": "M. Chapoutier Les Meysonniers Crozes-Hermitage 2023 is aged in unlined concrete vats (90%) and 10% in barrels for approximately 12 months.",
+    "fermentation_es": "Fermentation takes place in concrete vats after destemming, utilizing indigenous yeasts. Maceration lasts for 3 to 4 weeks.",
+    "soil_es": "The soil type is an alluvial terroir, formed by terraces from the Rhône and Isère rivers. It consists of a mixture of clay, pebbles, and gravel, including large, round pebbles. The vineyards are on gently sloping, south-facing hillsides."
+  },
+  {
+    "sku": "wine_chapoutier_belleruche_tinto_2023",
+    "normalized_name": "M. Chapoutier Belleruche Côtes-du-Rhône Rouge",
+    "producer": "M. Chapoutier",
+    "region": "Côtes-du-Rhône",
+    "appellation": "Côtes-du-Rhône Rouge",
+    "vintage": 2023,
+    "grapes": [
+      {
+        "name": "Grenache",
+        "percent": 50,
+        "sources": [
+          {
+            "link": "https://www.empirewine.com/wine/m-chapoutier-belleruche-cotes-du-rhone-rouge-2023-h70176/",
+            "extract": "This producer's biggest wine is a blend of wines from the left and right banks of the Rhone. Roughly 50-50 grenache and syrah."
+          }
+        ]
+      },
+      {
+        "name": "Syrah",
+        "percent": 50,
+        "sources": [
+          {
+            "link": "https://www.empirewine.com/wine/m-chapoutier-belleruche-cotes-du-rhone-rouge-2023-h70176/",
+            "extract": "This producer's biggest wine is a blend of wines from the left and right banks of the Rhone. Roughly 50-50 grenache and syrah."
+          }
+        ]
+      }
+    ],
+    "country": "España",
+    "type": "Tinto",
+    "alcohol_by_volume": 14.5,
+    "price": 25.0,
+    "stock": true,
+    "desc_es": "For the 2023 vintage, James Suckling describes it as brimming with red fruit aromas, notes of spices and dried herbs including laurel. It's rich and fleshy with healthy tannins and excellent freshness, leading to a harmonious finish. General notes (possibly from other vintages) mention intense blackcurrant and raspberry notes complemented by hints of white pepper, with a powerful, juicy, and fruity palate, lovely roasted notes, and silky, delicate tannins. Food Pairings: Grilled and roasted red and white meats, pizza and pasta (especially lamb ragu), mild, creamy, and robust cheeses.",
+    "aging_es": "The M. Chapoutier Belleruche Côtes-du-Rhône Rouge matures for 6 months in concrete vats and stainless steel tanks. For the 2023 vintage, James Suckling suggests drinking it now.",
+    "fermentation_es": "After a total destemming, the grapes are vinified in concrete and stainless steel tanks for 3 to 4 weeks. Pumping over operations are carried out each day to gently extract the aromatic components, anthocyanins and tannins. The fermentation temperature is regulated and set at 28°C. At the end of alcoholic fermentation, the temperature is allowed to rise to 30-33°C to assist the polymerization of tannins. It then matures for 6 months in concrete vats and stainless steel tanks.",
+    "soil_es": "The wine is produced from several major types of terroirs including pebbly clay soils, soils with layers of stones, stony clay terraces, and stony silty-sand."
+  },
+  {
+    "sku": "wine_campo_elisio_cuvee_alegre_rueda_2023",
+    "normalized_name": "Campo Eliseo Cuvee Alegre Blanco",
+    "producer": "Bodega Campo Eliseo",
+    "region": "Rueda, Castilla y León, Spain",
+    "appellation": "Rueda DO",
+    "vintage": 2023,
+    "grapes": [
+      {
+        "name": "Verdejo",
+        "percent": null,
+        "sources": [
+          {
+            "link": "https://www.wine-searcher.com/find/campo+eliseo+cuvee+alegre+blanco+rueda+castilla+y+leon+spain?srsltid=AfmBOor2YGC-7nSxgLK-ef-CRiq4jz9HG0AvoK4dnBvzAml0NMcUt2xb",
+            "extract": "Grape Variety Verdejo"
+          }
+        ]
+      }
+    ],
+    "country": "España",
+    "type": "Tinto",
+    "alcohol_by_volume": "13 - 13.5%",
+    "price": 25.0,
+    "stock": true,
+    "aging_es": "The must undergoes cold maceration on skins for 8 to 12 hours. The juice is then fermented in three equal parts: one-third in egg-shaped concrete vats, one-third in new 600-litre French oak barrels, and the remainder in stainless steel vats. The lees are regularly pumped over during four months of maturation. The three wines are then blended and matured for an additional two months.",
+    "soil_es": "stony soils"
+  },
+  {
+    "sku": "wine_chapoutier_belleruche_blanc_2024",
+    "normalized_name": "M. Chapoutier Côtes-du-Rhône Belleruche",
+    "producer": "M. Chapoutier is a renowned winery and négociant business located in Tain-l'Hermitage, Rhône, France. The Chapoutier family's winemaking history in the Rhône region dates back to 1808. Under the leadership of Michel Chapoutier, who took over in 1990, the winery has become a pioneer in biodynamic viticulture and has gained international recognition for its wines. M. Chapoutier produces a wide range of wines from various appellations across the Rhône Valley and has expanded its operations to include collaborative projects in Australia and Portugal. They are also distinctive for including Braille writing on all their wine labels since 1996.",
+    "region": "Côtes-du-Rhône, Rhone Valley, France",
+    "appellation": "Côtes-du-Rhône",
+    "vintage": 2024,
+    "grapes": [
+      {
+        "name": "Grenache",
+        "percent": null,
+        "sources": [
+          {
+            "link": "https://www.chapoutier.com/en/shop/belleruche/2024/19",
+            "extract": "Grape variety/varieties: Mainly Grenache and Syrah."
+          }
+        ]
+      },
+      {
+        "name": "Syrah",
+        "percent": null,
+        "sources": [
+          {
+            "link": "https://www.chapoutier.com/en/shop/belleruche/2024/19",
+            "extract": "Grape variety/varieties: Mainly Grenache and Syrah."
+          }
+        ]
+      }
+    ],
+    "country": "España",
+    "type": "Tinto",
+    "alcohol_by_volume": 14.5,
+    "price": 25.0,
+    "stock": true,
+    "desc_es": {
+      "appearance": "deep garnet red",
+      "nose": "intense, fruity (blackcurrant/raspberry) and complemented by notes of white pepper",
+      "palate": "juicy, powerful and fruity (red fruits notes) on the palate, with lovely roasted notes. Silky and delicate tannins. Raspberry flavors mingling with a spicy licorice note."
+    },
+    "aging_es": "6 months in concrete vats and stainless steel tanks. Ageing potential: 3-5 years.",
+    "fermentation_es": "After total destemming, grapes are vinified in concrete and stainless steel tanks for 3 to 4 weeks. Pumping over is done daily for extraction. Fermentation temperature is regulated at 28°C, then allowed to rise to 30-33°C after alcoholic fermentation to assist tannin polymerization. Information on wild yeast, oak fermentation, or malolactic fermentation is not specified.",
+    "soil_es": "The soil is made up of several major types of terroirs including pebbly clay soils, soils with layers of stones, stony clay terraces, and stony silty-sand. These soils provide the vine with a constant water supply and release stored heat at night."
+  },
+  {
+    "sku": "wine_bellefontaine_grenache_rose_2024",
+    "normalized_name": "Boutinot Bellefontaine Grenache Rose",
+    "producer": "Boutinot France",
+    "region": "Languedoc, France",
+    "appellation": "IGP Pays d'Oc",
+    "vintage": 2024,
+    "grapes": [
+      {
+        "name": "Grenache",
+        "percent": 100,
+        "sources": [
+          {
+            "link": "https://boutinot.com/wines/bellefontaine-grenache-rose-pays-doc/",
+            "extract": "Grape Grenache 100%"
+          }
+        ]
+      }
+    ],
+    "country": "España",
+    "type": "Tinto",
+    "alcohol_by_volume": 12.0,
+    "price": 25.0,
+    "stock": true,
+    "desc_es": "Pale raspberry pink with appealing, soft, berry aromas. Smooth, round and juicy; this is an easy-drinking, vivaciously fruity rosé with a refreshingly dry, persistent finish.",
+    "aging_es": "Bottled young to capture its freshness and vibrant fruit character. No indication of barrel aging or lees contact for the 2024 vintage.",
+    "fermentation_es": "Fermentation takes place in temperature-controlled stainless steel with minimal intervention. Bottled young to capture the freshness and vibrant fruit character."
+  },
+  {
+    "sku": "wine_rafael_palacios_as_sortes_2023",
+    "normalized_name": "Rafael Palacios As Sortes Valdeorras",
+    "producer": "Rafael Palacios",
+    "region": "Valdeorras, Galicia, Spain",
+    "appellation": "D.O. Valdeorras",
+    "vintage": 2023,
+    "grapes": [
+      {
+        "name": "Godello",
+        "percent": null,
+        "sources": [
+          {
+            "link": "https://hk.cruworldwine.com/producers/rafael-palacios/",
+            "extract": "Rafael Palacios has one of the most recognisable family names in Spanish wine-making, with brother Alvaro making iconic reds in Priorat and the original estate producing top notch Rioja. Rafael, however is making some of the country's most exceptional white wines and doing so in truly original fashion. Raising the profile of Godello as a fine wine grape, Rafael has become a regional trendsetter."
+          },
+          {
+            "link": "https://taninowines.com/en/168-spanish-wine?order=product.name.asc&productListView=grid&q=Winery-Rafael+Palacios",
+            "extract": "Rafael Palacios As Sortes 2023 is a barrel fermented white wine from D.O. Valdeorras produced by the winery Rafael Palacios in Orense (Spain) using grapes of the variety Godello."
+          }
+        ]
+      }
+    ],
+    "country": "España",
+    "type": "Tinto",
+    "alcohol_by_volume": 14.5,
+    "price": 25.0,
+    "stock": true,
+    "desc_es": "An ethereal and pure expression of soft herbs, citrus pith and tropical nectar. It is uber mineral and precise with a long-lasting finish showing off lees contact and granitic beginnings.",
+    "aging_es": "Fermented in 500-liter French oak barrels with indigenous yeasts and matured in those barrels with fine lees for eight months.",
+    "fermentation_es": "Fermentation occurs in 500-liter French oak barrels using indigenous yeasts. Malolactic fermentation is generally avoided by the winemaker to preserve acidity.",
+    "soil_es": "The vineyards for Rafael Palacios' Godello wines, including As Sortes, are located in the Val do Bibei and consist of sandy granitic soils. These soils are described as eroded granite and drain very well."
+  },
+  {
+    "sku": "wine_barbadillo_manzanilla_en_rama_2025",
+    "normalized_name": "Barbadillo Manzanilla en Rama Salicornia 2023",
+    "producer": "Barbadillo",
+    "region": "Manzanilla - Sanlúcar de Barrameda",
+    "appellation": "Manzanilla - Sanlúcar de Barrameda",
+    "vintage": 2023,
+    "grapes": [
+      {
+        "name": "Palomino",
+        "percent": 100,
+        "sources": [
+          {
+            "link": "https://www.barbadillo.com/en/product/manzanilla-en-rama-salicornia/",
+            "extract": "Grape: 100% Organic Palomino"
+          }
+        ]
+      }
+    ],
+    "country": "España",
+    "type": "Tinto",
+    "alcohol_by_volume": 15.0,
+    "price": 25.0,
+    "stock": true,
+    "desc_es": "A cracking Manzanilla, different in style from a classic Manzanilla. It has a lot of maritime character, a nice savoury side, and plenty of depth for a young wine.",
+    "aging_es": "Biological aging with a solera system started in 2020 in the Arboledilla Winery. The wine has an average age of 3 years.",
+    "fermentation_es": "Fermentation takes place in water-cooled, small-capacity stainless steel tanks. It is a spontaneous fermentation initiated by yeasts originating from the vineyard. Malolactic fermentation is not mentioned, which is typical for Manzanilla production.",
+    "soil_es": "Chalky albariza soil"
+  },
+  {
+    "sku": "wine_bajo_piedre_malbec_2023",
+    "normalized_name": "Bajo Piedra Malbec",
+    "producer": "Familia Meli",
+    "region": "Valle de Uco, Mendoza",
+    "appellation": "Valle de Uco, Mendoza",
+    "vintage": 2023,
+    "grapes": [
+      {
+        "name": "Malbec",
+        "percent": 100,
+        "sources": [
+          {
+            "link": "https://www.familiameli.com/product/bajo-piedra-malbec-en/",
+            "extract": "VARIETY: Malbec"
+          }
+        ]
+      }
+    ],
+    "country": "España",
+    "type": "Tinto",
+    "alcohol_by_volume": 14.5,
+    "price": 25.0,
+    "stock": true,
+    "desc_es": "intense crimson red color, on the nose, you will sense fruity notes of plum and strawberry that evoke anise and roses. On the palate, it is fresh and creamy, with a persistent body, good acidity, and a long finish.",
+    "aging_es": "30% French oak – 70% concrete vessels",
+    "fermentation_es": "Traditional low-intervention vinification.",
+    "soil_es": "Alluvial loam with calcareous stones"
+  },
+  {
+    "sku": "wine_a_merced_bierzo_2021",
+    "normalized_name": "Michelini I Mufatto A Merced",
+    "producer": "Michelini I Mufatto",
+    "region": "Bierzo, Spain",
+    "appellation": "Bierzo",
+    "vintage": 2021,
+    "grapes": [
+      {
+        "name": "Mencia",
+        "percent": 100,
+        "sources": [
+          {
+            "link": "https://www.saratogawine.com/product/michelini-i-mufatto-mencia-a-merced-2021-750ml/",
+            "extract": "Varietal: Mencia\n100% Mencia sourced from the El Canto vineyard"
+          },
+          {
+            "link": "https://8wines.com/wines/michelini-i-mufatto-a-merced-2021",
+            "extract": "Varietal:Mencia\nGrapes:Mencia"
+          },
+          {
+            "link": "https://rockymountainwinespiritsbeer.com/shop/wine/red/michelini-i-muffato-a-merced-mencia-13-abv-750-ml/?srsltid=AfmBOop2XS-SYmJWU7NCUogMaRA7-vtibDFqVHxJ1L3IzEyxlTkicCEI",
+            "extract": "Michelini I Muffato 2021 A Merced is made with 100% Mencia.\nGrape Varietal | Mencia"
+          }
+        ]
+      }
+    ],
+    "country": "España",
+    "type": "Tinto",
+    "alcohol_by_volume": "13.0% - 13.5%",
+    "price": 25.0,
+    "stock": true,
+    "desc_es": "The Michelini I Mufatto A Merced 2021 has a fragrant and delicate aromatic profile with elegant floral and wild herb notes and some light earthy hints on the nose, including tobacco, berry, and flower. On the palate, it is complex and expressive with a medium body, soft tannins, refreshing acidity, and a long, refined finish. Flavor characteristics include tobacco, sour cherry, blackberry, violet, pomegranate, and crushed gravel. It is described as a very complete and balanced wine.",
+    "aging_es": "After manual harvesting and spontaneous fermentation in wooden vats, the finished wine rests for a little longer than a year in French oak barrels before bottling.",
+    "fermentation_es": "The Michelini I Mufatto A Merced 2021 undergoes spontaneous fermentation (with indigenous/native yeasts) using 50% foot-trodden whole clusters in wooden vats or 1,000-liter oak casks, followed by a long maceration.",
+    "soil_es": "Loam, with slate and quartz soils."
+  },
+  {
+    "sku": "wine_hacienda_solano_rdd_2023",
+    "normalized_name": "Hacienda Solano Selección",
+    "producer": "Hacienda Solano (owned by the Cubillo family)",
+    "region": "Ribera del Duero (Spain)",
+    "appellation": "Ribera del Duero",
+    "vintage": 2023,
+    "grapes": [
+      {
+        "name": "Tempranillo",
+        "percent": 100,
+        "sources": [
+          {
+            "link": "https://www.vinissimus.co.uk/en/wine/hacienda-solano-seleccion/?srsltid=AfmBOooEdzdppxDyrAu4ayoXjSSdoWQPyc3A59bST8cDBt8ABiOBzhqI",
+            "extract": "Grapes | 100% Tempranillo"
+          }
+        ]
+      }
+    ],
+    "country": "España",
+    "type": "Tinto",
+    "alcohol_by_volume": 14.0,
+    "price": 25.0,
+    "stock": true,
+    "desc_es": "The Hacienda Solano Selección (including the 2023 vintage as the latest available) generally presents a flavor profile with prominent notes of vanilla, oak, and chocolate. Red fruit characteristics like cherry and raspberry are also frequently mentioned, alongside black fruit notes such as black cherry and plum. Earthy nuances like leather, smoke, and cocoa, as well as spice notes like pepper, licorice, and mint, are also commonly detected by wine lovers. Less frequent mentions include ageing notes (toast, almond), vegetal notes (grass, gooseberry), floral notes (violet), dried fruit notes (prune, raisin), yeasty notes (oil), and citrus notes (orange).",
+    "aging_es": "While specific details for Hacienda Solano RdD 2023 were not found, the general aging practices for Hacienda Solano's red wines from the Ribera del Duero region involve maturation in a combination of French oak barrels and concrete tanks. For Hacienda Solano Selección (2022 vintage), malolactic fermentation occurs in steel tanks and 500-liter barrels, followed by 12 months of aging in 500-liter French oak barrels (one third of the total production) and a 5,000-liter concrete tank. Another source for the same wine indicates aging in concrete tanks and wood barrels (225 and 500 litres). For Hacienda Solano Viñas Viejas (2021 vintage), the aging process lasts 14 months in French oak barrels and an additional 4 months in a tank, with another mention of 12 months in French oak barrels.",
+    "fermentation_es": "For Hacienda Solano Selección, fermentation is spontaneous using indigenous/native yeasts. Primary alcoholic fermentation takes place in a combination of stainless steel tanks and concrete tanks, lasting approximately 9-14 days. Malolactic fermentation occurs in both steel tanks and 500-liter barrels. Aging then continues in French oak barrels (500-liter) and concrete tanks.",
+    "soil_es": "The vineyards for Hacienda Solano wines in La Aguilera consist of stony soils of sand and sandstone with a high iron content, as well as limestone soil. Additionally, some vineyards are noted to have soils composed of marl, clays, and limestone."
+  }
+]

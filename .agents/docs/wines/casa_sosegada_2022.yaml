@@ -1,0 +1,28 @@
+# Rafa Cambra Casa Sosegada (CSV-aligned) - Grape variety correction (NOT Bobal)
+wine_query: "Rafa Cambra Casa Sosegada"
+inventory_name: "Rafa Cambra Casa Sosegada"
+inventory_vintage: "2022"
+
+# Ground truth outputs
+normalized_name: "Rafa Cambra Casa Sosegada 2022"
+producer: null
+region: null
+appellation: null
+vintage: "2022"
+grapes: "Monastrell 50% + indigenous varieties (Forcalla, Arco, Mando)"
+fermentation: null
+aging: null
+
+# Corrections and flags
+corrections:
+  name_mismatch: false
+  vintage_mismatch: false
+  spelling_corrections: []
+  duplicate_flag: false
+
+notes: "95pt Parker wine. Main grape is Monastrell (~50%) plus indigenous varieties. Explicitly NOT Bobal - there is no Bobal in this region."
+
+metadata:
+  source: "mark_review_10aug.md"
+  category: "tech_facts"
+  issue_type: "wrong_grape_variety"

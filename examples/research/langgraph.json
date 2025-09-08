@@ -1,7 +1,9 @@
 {
-  "dependencies": ["."],
+  "dependencies": [
+    "."
+  ],
   "graphs": {
-    "research": "./research_agent.py:agent"
+    "wine": "./wine_agent.py:agent"
   },
   "env": ".env"
 }

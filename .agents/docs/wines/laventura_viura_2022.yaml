@@ -1,0 +1,28 @@
+# Laventura  Viura, Rioja (CSV-aligned) - Producer mention + spelling correction
+wine_query: "Laventura  Viura, Rioja"
+inventory_name: "Laventura  Viura, Rioja"
+inventory_vintage: "2022"
+
+# Ground truth outputs
+normalized_name: "Laventura  Viura, Rioja 2022"
+producer: "MacRobert & Canals"
+region: "Rioja"
+appellation: null
+vintage: "2022"
+grapes: "Viura"
+fermentation: null
+aging: null
+
+# Corrections and flags
+corrections:
+  name_mismatch: false
+  vintage_mismatch: false
+  spelling_corrections: ["Paraje (not Parade)"]
+  duplicate_flag: false
+
+notes: "Must mention producer 'MacRobert & Canals' even though they are small. Correct spelling: 'Paraje de la Virgen' not 'Parade'."
+
+metadata:
+  source: "mark_review_10aug.md"
+  category: "spelling_producer"
+  issue_type: "missing_producer_spelling"

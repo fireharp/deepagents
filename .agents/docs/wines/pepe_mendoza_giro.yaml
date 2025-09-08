@@ -1,0 +1,28 @@
+# Pepe Mendoza Giro (CSV-aligned) - Name mismatch with inventory
+wine_query: "Pepe Mendoza Giro"
+inventory_name: "Pepe Mendoza Giro"
+inventory_vintage: "2023"
+
+# Ground truth outputs
+normalized_name: "Pepe Mendoza Giro"
+producer: "Pepe Mendoza"
+region: "Alicante"
+appellation: null
+vintage: null
+grapes: "Monastrell"
+fermentation: null
+aging: null
+
+# Corrections and flags
+corrections:
+  name_mismatch: true # Flag if system returns "Mares de Luz A Giro Monastrell Alicante 2023"
+  vintage_mismatch: false
+  spelling_corrections: []
+  duplicate_flag: false
+
+notes: "Inventory stocks 'Pepe Mendoza Giro'; NOT 'Pepe Mendoza Mares de Luz A Giro Monastrell Alicante 2023'."
+
+metadata:
+  source: "mark_review_10aug.md"
+  category: "inventory_match"
+  issue_type: "name_expansion"

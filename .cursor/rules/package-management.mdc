@@ -1,0 +1,30 @@
+---
+alwaysApply: true
+description: Package management and dependency rules
+---
+
+# Package Management Rules
+
+## Use UV Package Manager
+
+- **ALWAYS use `uv` for package management**, never use `pip` directly
+- **Root project** (`./`): Use `uv add package-name` for dependency management
+- **Examples/research** (`examples/research/`): Use `uv pip install package-name`
+
+## Project Dependencies
+
+- Main dependencies are defined in [pyproject.toml](mdc:pyproject.toml)
+- Research example dependencies in [examples/research/requirements.txt](mdc:examples/research/requirements.txt)
+- Use `uv.lock` for lock file (auto-generated)
+
+## Never Use Interactive Commands
+
+- Don't run commands in interactive mode
+- Always use non-interactive flags (e.g., `--yes` for npx-like tools)
+- For long-running commands, run in background with `is_background: true`
+
+## Testing Before Showing
+
+- **NEVER show ANYTHING before testing it's working**
+- Either unit test or e2e test everything
+- Validate all functionality before presenting results

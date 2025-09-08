@@ -1,0 +1,28 @@
+# Veuve ambal Rose (CSV-aligned) - Inventory variant mismatch
+wine_query: "Veuve ambal Rose"
+inventory_name: "Veuve ambal Rose"
+inventory_vintage: "2025"
+
+# Ground truth outputs
+normalized_name: "Veuve Ambal Rosé"
+producer: "Veuve Ambal"
+region: "Bourgogne"
+appellation: "Crémant de Bourgogne"
+vintage: null # Non-vintage
+grapes: null
+fermentation: "Traditional method"
+aging: null
+
+# Corrections and flags
+corrections:
+  name_mismatch: true # Flag if system generates "Crémant de Bourgogne Rosé 2025"
+  vintage_mismatch: false
+  spelling_corrections: []
+  duplicate_flag: false
+
+notes: "Inventory stocks non-vintage 'Veuve Ambal Rosé, traditional method'. Do NOT fabricate vintage 2025. It seems that it was a mistake on CSV. Then we should have asked the user to clarify."
+
+metadata:
+  source: "mark_review_10aug.md"
+  category: "inventory_match"
+  issue_type: "vintage_fabrication"

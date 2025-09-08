@@ -1,0 +1,61 @@
+---
+description: Wine data export and WooCommerce CSV generation system
+globs: examples/research/export/*,**/export*
+---
+
+# Wine Export System Rules
+
+## WooCommerce CSV Finalizer
+
+### Core Module
+- [examples/research/export/woocommerce_finalizer.py](mdc:examples/research/export/woocommerce_finalizer.py) - Main finalizer
+- Converts wine JSON data to bilingual ES/EN WooCommerce CSV format
+
+### Mappings System
+- [examples/research/export/mappings/](mdc:examples/research/export/mappings/) - Production mappings
+- **Countries**: 65+ wine-producing countries (ES ↔ EN)
+- **Types**: 50+ wine styles (Tinto ↔ Red, etc.)
+- **Grapes**: 180+ varieties with shortlist constraint (70 in shortlist)
+
+### Database Integration
+- [examples/research/export_runs_to_csv.py](mdc:examples/research/export_runs_to_csv.py) - Extract from Neon DB
+- [examples/research/validate_csv_format.py](mdc:examples/research/validate_csv_format.py) - CSV validation
+
+## CSV Format Requirements
+
+### Delimiters
+- **Field delimiter**: Semicolon (`;`)
+- **Multi-value separator**: Pipe (`|`) with NO spaces
+- **Encoding**: UTF-8 with `\n` line endings
+
+### Required Columns (ES)
+- Basic: `sku`, `post_title`, `post_content`, `post_excerpt`, `regular_price`, `stock_status`
+- Attributes: `attribute:pa_pais`, `attribute:pa_region`, `attribute:pa_tipo`, etc.
+
+### Required Columns (EN)
+- All ES columns PLUS `wpml:original_product_sku` for WPML linking
+- Translated attributes: `pa_pais`, `pa_tipo`, `pa_uva-principal`
+
+## Usage Patterns
+
+### Basic Export
+```python
+from export.woocommerce_finalizer import finalize_wine_to_woocommerce_csv
+
+result = finalize_wine_to_woocommerce_csv(
+    data_path="wine_data.json",
+    mapping_dir="export/mappings",
+    output_es="products_es.csv",
+    output_en="products_en.csv"
+)
+```
+
+### Database Export
+```bash
+uv run export_runs_to_csv.py --limit 20 --output-dir csv_exports_all
+```
+
+### Validation
+```bash
+uv run python validate_csv_format.py --csv-dir csv_exports_all
+```

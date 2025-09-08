@@ -1,7 +1,7 @@
 # 🧠🤖Deep Agents
 
-Using an LLM to call tools in a loop is the simplest form of an agent. 
-This architecture, however, can yield agents that are “shallow” and fail to plan and act over longer, more complex tasks. 
+Using an LLM to call tools in a loop is the simplest form of an agent.
+This architecture, however, can yield agents that are “shallow” and fail to plan and act over longer, more complex tasks.
 Applications like “Deep Research”, "Manus", and “Claude Code” have gotten around this limitation by implementing a combination of four things:
 a **planning tool**, **sub agents**, access to a **file system**, and a **detailed prompt**.
 
@@ -16,6 +16,78 @@ a **planning tool**, **sub agents**, access to a **file system**, and a **detail
 ```bash
 pip install deepagents
 ```
+
+## Optional Integrations
+
+### Vector Database (Qdrant)
+
+DeepAgents includes optional Qdrant integration for persisting and retrieving cached research data:
+
+```bash
+# Install with Qdrant support
+pip install deepagents[qdrant]
+
+# Set environment variables
+export QDRANT_URL=https://your-cluster.qdrant.io:6333
+export QDRANT_API_KEY=your-api-key
+export OPENAI_API_KEY=your-openai-key
+
+# Use in examples
+cd examples/research
+python ingest_qdrant.py --state-file agent_state.json
+python query_qdrant.py --query "alcohol content" --wine wine-slug
+```
+
+See [QDRANT_INTEGRATION.md](QDRANT_INTEGRATION.md) for complete documentation.
+
+## Search Providers
+
+DeepAgents includes a flexible search provider system that supports multiple backends:
+
+### Available Providers
+
+- **Tavily** (default): Uses the Tavily search API
+- **Jina**: Uses s.jina.ai for discovery and r.jina.ai for content fetching
+
+### Configuration
+
+Set the search backend using environment variables:
+
+```bash
+# Use Tavily (default)
+export SEARCH_BACKEND=tavily
+export TAVILY_API_KEY=your_tavily_key
+
+# Use Jina
+export SEARCH_BACKEND=jina
+export JINA_API_KEY=your_jina_key  # optional
+```
+
+### Usage
+
+```python
+from deepagents.search import get_search_provider_from_env
+
+# Get provider based on environment configuration
+provider = get_search_provider_from_env()
+
+# Search with unified interface
+results = provider.search(
+    query="wine tasting notes",
+    max_results=5,
+    include_raw_content=True,
+    include_domains=["wine-searcher.com", "vivino.com"]
+)
+```
+
+### Configuration Options
+
+- `SEARCH_BACKEND`: `tavily` or `jina` (default: `tavily`)
+- `TAVILY_API_KEY`: Required for Tavily provider
+- `JINA_API_KEY`: Optional for Jina provider
+- `SEARCH_FETCH_CONCURRENCY`: Max concurrent requests for content fetching (default: `4`)
+- `SEARCH_HTTP_TIMEOUT_CONNECT`: Connection timeout in seconds (default: `5`)
+- `SEARCH_HTTP_TIMEOUT_READ`: Read timeout in seconds (default: `20`)
 
 ## Usage
 
@@ -85,7 +157,7 @@ The agent (and any subagents) will have access to these tools.
 
 The second argument to `create_deep_agent` is `instructions`.
 This will serve as part of the prompt of the deep agent.
-Note that there is a [built in system prompt](src/deepagents/prompts.py) as well, so this is not the *entire* prompt the agent will see.
+Note that there is a [built in system prompt](src/deepagents/prompts.py) as well, so this is not the _entire_ prompt the agent will see.
 
 ### `subagents` (Optional)
 
@@ -142,7 +214,7 @@ from deepagents import create_deep_agent
 # ... existing agent definitions ...
 
 model = init_chat_model(
-    model="ollama:gpt-oss:20b",  
+    model="ollama:gpt-oss:20b",
 )
 agent = create_deep_agent(
     tools=tools,
@@ -234,6 +306,7 @@ as well as custom instructions.
 `deepagents` supports human-in-the-loop approval for tool execution. You can configure specific tools to require human approval before execution using the `interrupt_config` parameter. You can also customize the message prefix shown to users for each tool when approval is required.
 
 The interrupt configuration uses four boolean parameters:
+
 - `allow_ignore`: Whether the user can skip the tool call
 - `allow_respond`: Whether the user can add a text response
 - `allow_edit`: Whether the user can edit the tool arguments
@@ -293,6 +366,7 @@ asyncio.run(main())
 ```
 
 ## Roadmap
+
 - [ ] Allow users to customize full system prompt
 - [ ] Code cleanliness (type hinting, docstrings, formating)
 - [ ] Allow for more of a robust virtual filesystem
