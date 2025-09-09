@@ -1,0 +1,71 @@
+cases:
+- query: "Domaine Tempier Bandol Ros\xE9 2023"
+  expected_outcome: one_exact
+  notes: Specific producer/wine/vintage
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  gold_name: "Domaine Tempier Bandol Ros\xE9 2023"
+  id: one_exact_11
+- query: Bodegas Muga Rioja Reserva 2019
+  expected_outcome: one_exact
+  notes: Specific producer/wine/vintage
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  gold_name: Bodegas Muga Rioja Reserva 2019
+  id: one_exact_12
+- query: Clos Mogador Priorat 2018
+  expected_outcome: one_exact
+  notes: Specific producer/wine/vintage
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  gold_name: Clos Mogador Priorat 2018
+  id: one_exact_13
+- query: Pieropan Soave Classico La Rocca 2020
+  expected_outcome: one_exact
+  notes: Specific producer/wine/vintage
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  gold_name: Pieropan Soave Classico La Rocca 2020
+  id: one_exact_14
+- query: Catena Zapata White Stones Chardonnay 2018
+  expected_outcome: one_exact
+  notes: Specific producer/wine/vintage
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  gold_name: Catena Zapata White Stones Chardonnay 2018
+  id: one_exact_15
+- query: "Nicolas Joly Coul\xE9e de Serrant 2019"
+  expected_outcome: one_exact
+  notes: Specific producer/wine/vintage
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  gold_name: "Nicolas Joly Coul\xE9e de Serrant 2019"
+  id: one_exact_16
+- query: "Ch\xE2teau Musar 2015"
+  expected_outcome: one_exact
+  notes: Specific producer/wine/vintage
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  gold_name: "Ch\xE2teau Musar 2015"
+  id: one_exact_17
+- query: "Cristom Mt. Jefferson Cuv\xE9e Pinot Noir 2021"
+  expected_outcome: one_exact
+  notes: Specific producer/wine/vintage
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  gold_name: "Cristom Mt. Jefferson Cuv\xE9e Pinot Noir 2021"
+  id: one_exact_18
+- query: "Billecart-Salmon Brut Ros\xE9 NV"
+  expected_outcome: one_exact
+  notes: Specific producer/wine/vintage
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  gold_name: "Billecart-Salmon Brut Ros\xE9 NV"
+  id: one_exact_19
+- query: Wachter-Wiesler Eisenberg Ried Schlossberg 2019
+  expected_outcome: one_exact
+  notes: Specific producer/wine/vintage
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  gold_name: Wachter-Wiesler Eisenberg Ried Schlossberg 2019
+  id: one_exact_20

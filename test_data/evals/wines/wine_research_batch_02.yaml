@@ -1,0 +1,233 @@
+# Wine Research Evaluation Cases - Batch 02
+# Additional cases from datasets_extra_cases.md for expanded coverage
+
+cases:
+  - id: "albarino_2022"
+    wine_query: "Do Ferreiro Albariño 2022"
+    inventory_name: "Do Ferreiro Albariño"
+    inventory_vintage: "2022"
+    normalized_name: "Do Ferreiro Albariño 2022"
+    producer: "Do Ferreiro"
+    region: "Rías Baixas"
+    appellation: "DO Rías Baixas"
+    vintage: "2022"
+    grapes: "Albariño 100%"
+    fermentation: null
+    aging: null
+    corrections:
+      name_mismatch: false
+      vintage_mismatch: false
+      spelling_corrections: []
+      duplicate_flag: false
+    notes: "Classic Albariño from a top producer in Galicia, Spain."
+    metadata:
+      source: "internal_knowledge"
+      category: "tech_facts"
+      issue_type: "standard_case"
+
+  - id: "chassagne_montrachet_2020"
+    wine_query: "Domaine Ramonet Chassagne-Montrachet 1er Cru Les Ruchottes 2020"
+    inventory_name: "Ramonet Chassagne 1er Cru Ruchottes"
+    inventory_vintage: "2020"
+    normalized_name: "Domaine Ramonet Chassagne-Montrachet 1er Cru Les Ruchottes 2020"
+    producer: "Domaine Ramonet"
+    region: "Burgundy"
+    appellation: "Chassagne-Montrachet 1er Cru"
+    vintage: "2020"
+    grapes: "Chardonnay 100%"
+    fermentation: null
+    aging: null
+    corrections:
+      name_mismatch: false
+      vintage_mismatch: false
+      spelling_corrections: []
+      duplicate_flag: false
+    notes: "High-end white Burgundy with specific Premier Cru vineyard."
+    metadata:
+      source: "internal_knowledge"
+      category: "tech_facts"
+      issue_type: "bordeaux_classification_equivalent"
+
+  - id: "clos_mogador_2019"
+    wine_query: "Clos Mogador 2019"
+    inventory_name: "Clos Mogador"
+    inventory_vintage: "2019"
+    normalized_name: "Clos Mogador 2019"
+    producer: "Clos Mogador"
+    region: "Priorat"
+    appellation: "DOCa Priorat"
+    vintage: "2019"
+    grapes: "Garnacha, Cariñena, Syrah, Cabernet Sauvignon"
+    fermentation: null
+    aging: null
+    corrections:
+      name_mismatch: false
+      vintage_mismatch: false
+      spelling_corrections: []
+      duplicate_flag: false
+    notes: "Iconic wine from Priorat, known for its powerful and complex blends."
+    metadata:
+      source: "internal_knowledge"
+      category: "tech_facts"
+      issue_type: "complex_blend"
+
+  - id: "keller_g_max_2021"
+    wine_query: "Keller G-Max Riesling Trocken 2021"
+    inventory_name: "Keller G-Max"
+    inventory_vintage: "2021"
+    normalized_name: "Keller G-Max Riesling Trocken 2021"
+    producer: "Weingut Keller"
+    region: "Rheinhessen"
+    appellation: "VDP.Grosses Gewächs"
+    vintage: "2021"
+    grapes: "Riesling 100%"
+    fermentation: null
+    aging: null
+    corrections:
+      name_mismatch: false
+      vintage_mismatch: false
+      spelling_corrections: []
+      duplicate_flag: false
+    notes: "One of Germany's most sought-after dry Rieslings. G-Max is a special cuvée, not a specific vineyard."
+    metadata:
+      source: "internal_knowledge"
+      category: "tech_facts"
+      issue_type: "vineyard_designation"
+
+  - id: "pheasants_tears_rkatsiteli_2020"
+    wine_query: "Pheasant's Tears Rkatsiteli 2020"
+    inventory_name: "Pheasant's Tears Rkatsiteli"
+    inventory_vintage: "2020"
+    normalized_name: "Pheasant's Tears Rkatsiteli 2020"
+    producer: "Pheasant's Tears"
+    region: "Kakheti"
+    appellation: ""
+    vintage: "2020"
+    grapes: "Rkatsiteli 100%"
+    fermentation: null
+    aging: null
+    corrections:
+      name_mismatch: false
+      vintage_mismatch: false
+      spelling_corrections: []
+      duplicate_flag: false
+    notes: "Traditional Georgian orange wine fermented in qvevri (clay amphorae)."
+    metadata:
+      source: "internal_knowledge"
+      category: "tech_facts"
+      issue_type: "unconventional_wine"
+
+  - id: "screaming_eagle_2018"
+    wine_query: "Screaming Eagle Cabernet Sauvignon 2018"
+    inventory_name: "Screaming Eagle"
+    inventory_vintage: "2018"
+    normalized_name: "Screaming Eagle Cabernet Sauvignon 2018"
+    producer: "Screaming Eagle"
+    region: "Napa Valley"
+    appellation: "Oakville"
+    vintage: "2018"
+    grapes: "Cabernet Sauvignon, Merlot, Cabernet Franc"
+    fermentation: null
+    aging: null
+    corrections:
+      name_mismatch: false
+      vintage_mismatch: false
+      spelling_corrections: []
+      duplicate_flag: false
+    notes: "Cult classic Napa Cabernet Sauvignon, very expensive and rare."
+    metadata:
+      source: "internal_knowledge"
+      category: "tech_facts"
+      issue_type: "cult_wine"
+
+  - id: "coulee_de_serrant_2019"
+    wine_query: "Nicolas Joly Coulée de Serrant 2019"
+    inventory_name: "Coulée de Serrant"
+    inventory_vintage: "2019"
+    normalized_name: "Nicolas Joly Coulée de Serrant 2019"
+    producer: "Nicolas Joly"
+    region: "Loire Valley"
+    appellation: "Savennières-Coulée de Serrant"
+    vintage: "2019"
+    grapes: "Chenin Blanc 100%"
+    fermentation: null
+    aging: null
+    corrections:
+      name_mismatch: false
+      vintage_mismatch: false
+      spelling_corrections: []
+      duplicate_flag: false
+    notes: "A benchmark for biodynamic winemaking from its own appellation."
+    metadata:
+      source: "internal_knowledge"
+      category: "tech_facts"
+      issue_type: "biodynamic"
+
+  - id: "penfolds_grange_2017"
+    wine_query: "Penfolds Grange 2017"
+    inventory_name: "Penfolds Grange"
+    inventory_vintage: "2017"
+    normalized_name: "Penfolds Grange 2017"
+    producer: "Penfolds"
+    region: "South Australia"
+    appellation: ""
+    vintage: "2017"
+    grapes: "Shiraz, Cabernet Sauvignon"
+    fermentation: null
+    aging: null
+    corrections:
+      name_mismatch: false
+      vintage_mismatch: false
+      spelling_corrections: []
+      duplicate_flag: false
+    notes: "Australia's most famous wine, a multi-vineyard, multi-regional blend."
+    metadata:
+      source: "internal_knowledge"
+      category: "tech_facts"
+      issue_type: "icon_wine"
+
+  - id: "domaine_drouhin_laurene_2019"
+    wine_query: "Domaine Drouhin Oregon Pinot Noir Laurène 2019"
+    inventory_name: "DDO Laurène"
+    inventory_vintage: "2019"
+    normalized_name: "Domaine Drouhin Oregon Pinot Noir Laurène 2019"
+    producer: "Domaine Drouhin Oregon"
+    region: "Willamette Valley"
+    appellation: "Dundee Hills"
+    vintage: "2019"
+    grapes: "Pinot Noir 100%"
+    fermentation: null
+    aging: null
+    corrections:
+      name_mismatch: false
+      vintage_mismatch: false
+      spelling_corrections: []
+      duplicate_flag: false
+    notes: "High-quality Pinot Noir from a respected producer in Oregon."
+    metadata:
+      source: "internal_knowledge"
+      category: "tech_facts"
+      issue_type: "new_world_pinot"
+
+  - id: "taylor_fladgate_vintage_port_2017"
+    wine_query: "Taylor Fladgate Vintage Port 2017"
+    inventory_name: "Taylor's Vintage Port"
+    inventory_vintage: "2017"
+    normalized_name: "Taylor Fladgate Vintage Port 2017"
+    producer: "Taylor Fladgate"
+    region: "Douro"
+    appellation: "Porto"
+    vintage: "2017"
+    grapes: "Touriga Nacional, Touriga Franca, Tinta Roriz, etc."
+    fermentation: null
+    aging: null
+    corrections:
+      name_mismatch: false
+      vintage_mismatch: false
+      spelling_corrections: []
+      duplicate_flag: false
+    notes: "A classic vintage port from a top house. Made from a blend of traditional Portuguese grapes."
+    metadata:
+      source: "internal_knowledge"
+      category: "tech_facts"
+      issue_type: "fortified_wine"

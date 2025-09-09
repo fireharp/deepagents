@@ -1,0 +1,71 @@
+cases:
+- query: Wine from the planet Mars vintage 3021
+  expected_pass: false
+  reason_code: impossible_location_vintage
+  notes: Unrealistic or contradictory constraints
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: fail_01
+- query: Chablis Sauvignon Blanc Grand Cru 2018
+  expected_pass: false
+  reason_code: invalid_grape_for_appellation
+  notes: Unrealistic or contradictory constraints
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: fail_02
+- query: Brunello di Montalcino Nebbiolo 2016
+  expected_pass: false
+  reason_code: invalid_grape_for_appellation
+  notes: Unrealistic or contradictory constraints
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: fail_03
+- query: "Champagne Prosecco Ros\xE9 2019"
+  expected_pass: false
+  reason_code: conflicting_appellations
+  notes: Unrealistic or contradictory constraints
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: fail_04
+- query: Pauillac Pinot Noir 2014
+  expected_pass: false
+  reason_code: invalid_grape_for_appellation
+  notes: Unrealistic or contradictory constraints
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: fail_05
+- query: "Bourgogne Aligot\xE9 Grand Cru 2021"
+  expected_pass: false
+  reason_code: nonexistent_classification
+  notes: Unrealistic or contradictory constraints
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: fail_06
+- query: "Napa Saint-\xC9milion Premier Grand Cru Class\xE9 A 2018"
+  expected_pass: false
+  reason_code: conflicting_regions_classes
+  notes: Unrealistic or contradictory constraints
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: fail_07
+- query: Hermitage GSM blend 2018
+  expected_pass: false
+  reason_code: invalid_style_for_appellation
+  notes: Unrealistic or contradictory constraints
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: fail_08
+- query: Pomerol 100% Sangiovese 2012
+  expected_pass: false
+  reason_code: invalid_grape_for_appellation
+  notes: Unrealistic or contradictory constraints
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: fail_09
+- query: "Tokaji Asz\xFA Champagne Method 6 Puttonyos Brut 2007"
+  expected_pass: false
+  reason_code: conflicting_styles_methods
+  notes: Unrealistic or contradictory constraints
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: fail_10

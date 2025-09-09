@@ -1,0 +1,233 @@
+# Wine Research Evaluation Cases - Batch 03
+# Additional wine cases covering diverse regions and styles
+
+cases:
+  - id: "etna_rosso_calderara_sottana_2020"
+    wine_query: "Tenuta delle Terre Nere Etna Rosso Calderara Sottana 2020"
+    inventory_name: "Terre Nere Calderara Sottana"
+    inventory_vintage: "2020"
+    normalized_name: "Tenuta delle Terre Nere Etna Rosso Calderara Sottana 2020"
+    producer: "Tenuta delle Terre Nere"
+    region: "Sicily"
+    appellation: "Etna DOC"
+    vintage: "2020"
+    grapes: "Nerello Mascalese, Nerello Cappuccio"
+    fermentation: null
+    aging: null
+    corrections:
+      name_mismatch: false
+      vintage_mismatch: false
+      spelling_corrections: []
+      duplicate_flag: false
+    notes: "Volcanic wine from Mount Etna, often compared to Burgundy."
+    metadata:
+      source: "internal_knowledge"
+      category: "tech_facts"
+      issue_type: "volcanic_wine"
+
+  - id: "montes_purple_angel_2018"
+    wine_query: "Montes Purple Angel 2018"
+    inventory_name: "Montes Purple Angel"
+    inventory_vintage: "2018"
+    normalized_name: "Montes Purple Angel 2018"
+    producer: "Montes"
+    region: "Colchagua Valley"
+    appellation: ""
+    vintage: "2018"
+    grapes: "Carménère 92%, Petit Verdot 8%"
+    fermentation: null
+    aging: null
+    corrections:
+      name_mismatch: false
+      vintage_mismatch: false
+      spelling_corrections: []
+      duplicate_flag: false
+    notes: "A benchmark for high-quality Carménère from Chile."
+    metadata:
+      source: "internal_knowledge"
+      category: "tech_facts"
+      issue_type: "signature_grape"
+
+  - id: "royal_tokaji_5_puttonyos_2013"
+    wine_query: "Royal Tokaji 5 Puttonyos Aszú 2013"
+    inventory_name: "Royal Tokaji 5 Putt"
+    inventory_vintage: "2013"
+    normalized_name: "Royal Tokaji 5 Puttonyos Aszú 2013"
+    producer: "Royal Tokaji"
+    region: "Tokaj"
+    appellation: ""
+    vintage: "2013"
+    grapes: "Furmint, Hárslevelű"
+    fermentation: null
+    aging: null
+    corrections:
+      name_mismatch: false
+      vintage_mismatch: false
+      spelling_corrections: []
+      duplicate_flag: false
+    notes: "Famous Hungarian sweet wine, with sweetness level indicated by 'Puttonyos'."
+    metadata:
+      source: "internal_knowledge"
+      category: "tech_facts"
+      issue_type: "dessert_wine"
+
+  - id: "catena_zapata_malbec_argentino_2018"
+    wine_query: "Catena Zapata Malbec Argentino 2018"
+    inventory_name: "Catena Zapata Malbec Argentino"
+    inventory_vintage: "2018"
+    normalized_name: "Catena Zapata Malbec Argentino 2018"
+    producer: "Catena Zapata"
+    region: "Mendoza"
+    appellation: ""
+    vintage: "2018"
+    grapes: "Malbec 100%"
+    fermentation: null
+    aging: null
+    corrections:
+      name_mismatch: false
+      vintage_mismatch: false
+      spelling_corrections: []
+      duplicate_flag: false
+    notes: "Iconic Malbec from one of Argentina's most renowned producers."
+    metadata:
+      source: "internal_knowledge"
+      category: "tech_facts"
+      issue_type: "standard_case"
+
+  - id: "domaine_sigalas_assyrtiko_2021"
+    wine_query: "Domaine Sigalas Assyrtiko 2021"
+    inventory_name: "Sigalas Assyrtiko"
+    inventory_vintage: "2021"
+    normalized_name: "Domaine Sigalas Assyrtiko 2021"
+    producer: "Domaine Sigalas"
+    region: "Santorini"
+    appellation: "PDO Santorini"
+    vintage: "2021"
+    grapes: "Assyrtiko 100%"
+    fermentation: null
+    aging: null
+    corrections:
+      name_mismatch: false
+      vintage_mismatch: false
+      spelling_corrections: []
+      duplicate_flag: false
+    notes: "Crisp, mineral-driven white wine from the volcanic island of Santorini."
+    metadata:
+      source: "internal_knowledge"
+      category: "tech_facts"
+      issue_type: "volcanic_wine"
+
+  - id: "giacomo_conterno_barolo_monfortino_2016"
+    wine_query: "Giacomo Conterno Barolo Riserva Monfortino 2016"
+    inventory_name: "Conterno Monfortino"
+    inventory_vintage: "2016"
+    normalized_name: "Giacomo Conterno Barolo Riserva Monfortino 2016"
+    producer: "Giacomo Conterno"
+    region: "Piedmont"
+    appellation: "Barolo DOCG"
+    vintage: "2016"
+    grapes: "Nebbiolo 100%"
+    fermentation: null
+    aging: null
+    corrections:
+      name_mismatch: false
+      vintage_mismatch: false
+      spelling_corrections: []
+      duplicate_flag: false
+    notes: "Legendary Barolo, only produced in exceptional vintages."
+    metadata:
+      source: "internal_knowledge"
+      category: "tech_facts"
+      issue_type: "icon_wine"
+
+  - id: "chateau_petrus_2015"
+    wine_query: "Château Pétrus 2015"
+    inventory_name: "Pétrus"
+    inventory_vintage: "2015"
+    normalized_name: "Château Pétrus 2015"
+    producer: "Château Pétrus"
+    region: "Bordeaux"
+    appellation: "Pomerol"
+    vintage: "2015"
+    grapes: "Merlot 100%"
+    fermentation: null
+    aging: null
+    corrections:
+      name_mismatch: false
+      vintage_mismatch: false
+      spelling_corrections: []
+      duplicate_flag: false
+    notes: "One of the world's most famous and expensive wines, from the right bank of Bordeaux."
+    metadata:
+      source: "internal_knowledge"
+      category: "tech_facts"
+      issue_type: "cult_wine"
+
+  - id: "chateau_dyquem_2001"
+    wine_query: "Château d'Yquem 2001"
+    inventory_name: "Yquem"
+    inventory_vintage: "2001"
+    normalized_name: "Château d'Yquem 2001"
+    producer: "Château d'Yquem"
+    region: "Bordeaux"
+    appellation: "Sauternes"
+    vintage: "2001"
+    grapes: "Sémillon, Sauvignon Blanc"
+    fermentation: null
+    aging: null
+    corrections:
+      name_mismatch: false
+      vintage_mismatch: false
+      spelling_corrections: []
+      duplicate_flag: false
+    notes: "The most famous sweet wine in the world, from a legendary vintage."
+    metadata:
+      source: "internal_knowledge"
+      category: "tech_facts"
+      issue_type: "dessert_wine"
+
+  - id: "cloudy_bay_sauvignon_blanc_2022"
+    wine_query: "Cloudy Bay Sauvignon Blanc 2022"
+    inventory_name: "Cloudy Bay SB"
+    inventory_vintage: "2022"
+    normalized_name: "Cloudy Bay Sauvignon Blanc 2022"
+    producer: "Cloudy Bay"
+    region: "Marlborough"
+    appellation: ""
+    vintage: "2022"
+    grapes: "Sauvignon Blanc 100%"
+    fermentation: null
+    aging: null
+    corrections:
+      name_mismatch: false
+      vintage_mismatch: false
+      spelling_corrections: []
+      duplicate_flag: false
+    notes: "The wine that put New Zealand on the map for Sauvignon Blanc."
+    metadata:
+      source: "internal_knowledge"
+      category: "tech_facts"
+      issue_type: "standard_case"
+
+  - id: "ridge_geyserville_2019"
+    wine_query: "Ridge Geyserville 2019"
+    inventory_name: "Ridge Geyserville"
+    inventory_vintage: "2019"
+    normalized_name: "Ridge Geyserville 2019"
+    producer: "Ridge Vineyards"
+    region: "Sonoma County"
+    appellation: "Alexander Valley"
+    vintage: "2019"
+    grapes: "Zinfandel, Carignane, Petite Sirah, Alicante Bouschet"
+    fermentation: null
+    aging: null
+    corrections:
+      name_mismatch: false
+      vintage_mismatch: false
+      spelling_corrections: []
+      duplicate_flag: false
+    notes: "A classic California field blend, labeled as Zinfandel."
+    metadata:
+      source: "internal_knowledge"
+      category: "tech_facts"
+      issue_type: "complex_blend"

@@ -1,0 +1,61 @@
+cases:
+- query: Brunello di Montalcino made from Nebbiolo 2016
+  expected_outcome: overcommit
+  notes: Conflicting or non-existent constraints
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: overcommit_01
+- query: Chablis Sauvignon Blanc Grand Cru 2018
+  expected_outcome: overcommit
+  notes: Conflicting or non-existent constraints
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: overcommit_02
+- query: "Champagne Prosecco Ros\xE9 2019"
+  expected_outcome: overcommit
+  notes: Conflicting or non-existent constraints
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: overcommit_03
+- query: Rioja DOCa Barolo DOCG blend 2015
+  expected_outcome: overcommit
+  notes: Conflicting or non-existent constraints
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: overcommit_04
+- query: Pauillac Pinot Noir 2014
+  expected_outcome: overcommit
+  notes: Conflicting or non-existent constraints
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: overcommit_05
+- query: Sancerre Chardonnay 2020 oak-free from Les Pucelles
+  expected_outcome: overcommit
+  notes: Conflicting or non-existent constraints
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: overcommit_06
+- query: "Priorat DOQ Ch\xE2teauneuf-du-Pape 2017 co-bottling"
+  expected_outcome: overcommit
+  notes: Conflicting or non-existent constraints
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: overcommit_07
+- query: "Bourgogne Aligot\xE9 Grand Cru 2021"
+  expected_outcome: overcommit
+  notes: Conflicting or non-existent constraints
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: overcommit_08
+- query: "Napa Saint-\xC9milion Premier Grand Cru Class\xE9 A 2018"
+  expected_outcome: overcommit
+  notes: Conflicting or non-existent constraints
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: overcommit_09
+- query: Marselan-only Barolo 2013
+  expected_outcome: overcommit
+  notes: Conflicting or non-existent constraints
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: overcommit_10

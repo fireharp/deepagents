@@ -1,0 +1,61 @@
+cases:
+- wine_query: "Fran\xE7ois Cotat Sancerre Les Monts Damn\xE9s 2019"
+  inventory_name: Francois Cotat Mont Damnes 2019
+  inventory_vintage: '2019'
+  normalized_name: "Fran\xE7ois Cotat Sancerre Les Monts Damn\xE9s 2019"
+  producer: "Fran\xE7ois Cotat"
+  region: Loire Valley
+  appellation: Sancerre AOC
+  vintage: 2019
+  grapes: Sauvignon Blanc 100%
+  corrections:
+    fix_climat_spelling:
+      input: Mont Damnes
+      normalized: "Les Monts Damn\xE9s"
+  notes: Fix plural and accents; keep AOC.
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+    category: tech_facts
+    issue_type: spelling_accent
+  id: sancerre_francois_cotat_les_mont_damnes_2019
+  fermentation: null
+  aging: null
+- wine_query: "Vega Sicilia \xDAnico 2011"
+  inventory_name: Vega Sicilia Unico 2011
+  inventory_vintage: '2011'
+  normalized_name: "Vega Sicilia \xDAnico 2011"
+  producer: Vega Sicilia
+  region: "Castilla y Le\xF3n"
+  appellation: Ribera del Duero DO
+  vintage: 2011
+  grapes: Tempranillo & Cabernet Sauvignon
+  corrections:
+    accent_added:
+    - "\xDAnico"
+  notes: "Add accent on \xDAnico; show DO in appellation field."
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+    category: tech_facts
+    issue_type: diacritics
+  id: vega_sicilia_unico_2011
+  fermentation: null
+  aging: null
+- wine_query: Keller Riesling GG Kirchspiel 2021
+  inventory_name: Keller Kirchspiel GG 2021
+  inventory_vintage: '2021'
+  normalized_name: Weingut Keller Kirchspiel Riesling GG 2021
+  producer: Weingut Keller
+  region: Rheinhessen
+  appellation: VDP.Grosse Lage
+  vintage: 2021
+  grapes: Riesling 100%
+  corrections:
+    prepend_producer: true
+  notes: Normalize to 'Producer Vineyard Variety GG Vintage'.
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+    category: tech_facts
+    issue_type: normalization
+  id: weingut_keller_riesling_kirchspiel_gg_2021
+  fermentation: null
+  aging: null

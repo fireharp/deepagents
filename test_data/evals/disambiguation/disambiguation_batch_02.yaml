@@ -1,0 +1,53 @@
+# Disambiguation Evaluation Cases - Batch 02
+# Needs Clarification cases - too vague or broad queries
+
+cases:
+  - id: "red_wine"
+    query: "Red wine"
+    expected_outcome: "needs_clarification"
+    notes: "Extremely generic, could be any red wine."
+
+  - id: "italian_wine"
+    query: "Italian wine"
+    expected_outcome: "needs_clarification"
+    notes: "Too broad, Italy has thousands of wines."
+
+  - id: "nice_bottle_gift"
+    query: "A nice bottle for a gift"
+    expected_outcome: "needs_clarification"
+    notes: "Subjective and lacks any specific constraints."
+
+  - id: "something_from_2015"
+    query: "Something from 2015"
+    expected_outcome: "needs_clarification"
+    notes: "Vintage alone is not enough to identify a wine."
+
+  - id: "pinot"
+    query: "Pinot"
+    expected_outcome: "needs_clarification"
+    notes: "Could be Pinot Noir, Pinot Grigio, Pinot Blanc, etc., from anywhere."
+
+  - id: "bordeaux"
+    query: "Bordeaux"
+    expected_outcome: "needs_clarification"
+    notes: "A huge region with thousands of producers."
+
+  - id: "sparkling"
+    query: "Sparkling"
+    expected_outcome: "needs_clarification"
+    notes: "Could be Champagne, Prosecco, Cava, etc."
+
+  - id: "bold_red"
+    query: "A bold red"
+    expected_outcome: "needs_clarification"
+    notes: "Style description is too subjective and broad."
+
+  - id: "wine_from_spain"
+    query: "Wine from Spain"
+    expected_outcome: "needs_clarification"
+    notes: "Country is too broad a filter."
+
+  - id: "steak_pairing"
+    query: "Something that goes well with steak"
+    expected_outcome: "needs_clarification"
+    notes: "Food pairing is a preference, not a specific wine identifier."

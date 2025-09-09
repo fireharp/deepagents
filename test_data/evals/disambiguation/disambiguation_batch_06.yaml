@@ -1,0 +1,61 @@
+cases:
+- query: Chardonnay
+  expected_outcome: needs_clarification
+  notes: "Too generic\u2014needs narrowing"
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: needs_clarification_01
+- query: Pinot Noir
+  expected_outcome: needs_clarification
+  notes: "Too generic\u2014needs narrowing"
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: needs_clarification_02
+- query: Rioja Reserva
+  expected_outcome: needs_clarification
+  notes: "Too generic\u2014needs narrowing"
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: needs_clarification_03
+- query: Bordeaux
+  expected_outcome: needs_clarification
+  notes: "Too generic\u2014needs narrowing"
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: needs_clarification_04
+- query: Burgundy Chardonnay
+  expected_outcome: needs_clarification
+  notes: "Too generic\u2014needs narrowing"
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: needs_clarification_05
+- query: Sancerre
+  expected_outcome: needs_clarification
+  notes: "Too generic\u2014needs narrowing"
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: needs_clarification_06
+- query: Barolo
+  expected_outcome: needs_clarification
+  notes: "Too generic\u2014needs narrowing"
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: needs_clarification_07
+- query: Chablis
+  expected_outcome: needs_clarification
+  notes: "Too generic\u2014needs narrowing"
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: needs_clarification_08
+- query: "Champagne Ros\xE9"
+  expected_outcome: needs_clarification
+  notes: "Too generic\u2014needs narrowing"
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: needs_clarification_09
+- query: Chianti Classico
+  expected_outcome: needs_clarification
+  notes: "Too generic\u2014needs narrowing"
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: needs_clarification_10

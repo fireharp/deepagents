@@ -1,0 +1,61 @@
+cases:
+- query: Montepulciano
+  expected_outcome: needs_clarification
+  notes: "Too generic\u2014needs narrowing"
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: needs_clarification_11
+- query: Sauvignon Blanc
+  expected_outcome: needs_clarification
+  notes: "Too generic\u2014needs narrowing"
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: needs_clarification_12
+- query: Riesling Kabinett
+  expected_outcome: needs_clarification
+  notes: "Too generic\u2014needs narrowing"
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: needs_clarification_13
+- query: "C\xF4te-R\xF4tie"
+  expected_outcome: needs_clarification
+  notes: "Too generic\u2014needs narrowing"
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: needs_clarification_14
+- query: Cava Brut
+  expected_outcome: needs_clarification
+  notes: "Too generic\u2014needs narrowing"
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: needs_clarification_15
+- query: Beaujolais Villages
+  expected_outcome: needs_clarification
+  notes: "Too generic\u2014needs narrowing"
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: needs_clarification_16
+- query: Portuguese field blend
+  expected_outcome: needs_clarification
+  notes: "Too generic\u2014needs narrowing"
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: needs_clarification_17
+- query: Etna Rosso
+  expected_outcome: needs_clarification
+  notes: "Too generic\u2014needs narrowing"
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: needs_clarification_18
+- query: Napa Cabernet
+  expected_outcome: needs_clarification
+  notes: "Too generic\u2014needs narrowing"
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: needs_clarification_19
+- query: "German Sp\xE4tburgunder"
+  expected_outcome: needs_clarification
+  notes: "Too generic\u2014needs narrowing"
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: needs_clarification_20

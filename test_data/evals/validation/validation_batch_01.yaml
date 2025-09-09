@@ -1,0 +1,63 @@
+# Validation Evaluation Cases - Batch 01
+# Should Pass cases - valid wine queries that should be accepted
+
+cases:
+  - id: "silver_oak_alexander_valley_2017"
+    query: "Silver Oak Alexander Valley Cabernet Sauvignon 2017"
+    expected_pass: true
+    reason_code: "specific_wine_vintage"
+    notes: "Well-known California Cabernet."
+
+  - id: "whispering_angel_rose_2022"
+    query: "Whispering Angel Rosé 2022"
+    expected_pass: true
+    reason_code: "popular_wine"
+    notes: "Extremely popular rosé from Provence."
+
+  - id: "amarone_grapes_question"
+    query: "What are the main grapes in Amarone?"
+    expected_pass: true
+    reason_code: "question_about_wine_style"
+    notes: "A researchable question about a famous wine style."
+
+  - id: "bordeaux_2010_vintage"
+    query: "Tell me about the 2010 vintage in Bordeaux."
+    expected_pass: true
+    reason_code: "question_about_vintage"
+    notes: "A valid query about a specific vintage in a region."
+
+  - id: "meiomi_pinot_noir"
+    query: "Meiomi Pinot Noir"
+    expected_pass: true
+    reason_code: "popular_wine_no_vintage"
+    notes: "A very popular, widely available non-vintage specific wine."
+
+  - id: "gruner_veltliner_austria"
+    query: "Grüner Veltliner from Austria"
+    expected_pass: true
+    reason_code: "grape_and_country"
+    notes: "A common and valid request."
+
+  - id: "salmon_wine_pairing"
+    query: "What is a good wine to pair with salmon?"
+    expected_pass: true
+    reason_code: "food_pairing_query"
+    notes: "A common and answerable question."
+
+  - id: "zinfandel_lodi"
+    query: "Zinfandel from Lodi"
+    expected_pass: true
+    reason_code: "grape_and_region"
+    notes: "Lodi is famous for Zinfandel."
+
+  - id: "chianti_vs_brunello"
+    query: "Compare Chianti Classico and Brunello di Montalcino"
+    expected_pass: true
+    reason_code: "comparison_query"
+    notes: "A valid request to compare two well-known wines."
+
+  - id: "sur_lie_meaning"
+    query: "What does 'sur lie' mean?"
+    expected_pass: true
+    reason_code: "winemaking_term_query"
+    notes: "A query about a common winemaking term."

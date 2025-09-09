@@ -1,0 +1,71 @@
+cases:
+- query: Rioja Gran Reserva carbonic maceration Nouveau 2020
+  expected_pass: false
+  reason_code: contradictory_style_terms
+  notes: Unrealistic or contradictory constraints
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: fail_11
+- query: Cava Traditional Method from Champagne AOC 2016
+  expected_pass: false
+  reason_code: conflicting_regions_classes
+  notes: Unrealistic or contradictory constraints
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: fail_12
+- query: Chianti Classico from Barossa Valley 2015
+  expected_pass: false
+  reason_code: conflicting_regions
+  notes: Unrealistic or contradictory constraints
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: fail_13
+- query: Vouvray made from Chardonnay 2019
+  expected_pass: false
+  reason_code: invalid_grape_for_appellation
+  notes: Unrealistic or contradictory constraints
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: fail_14
+- query: Pfalz Sherry Oloroso 1990
+  expected_pass: false
+  reason_code: conflicting_styles_regions
+  notes: Unrealistic or contradictory constraints
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: fail_15
+- query: "C\xF4te-R\xF4tie 100% Grenache 2018"
+  expected_pass: false
+  reason_code: invalid_grape_for_appellation
+  notes: Unrealistic or contradictory constraints
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: fail_16
+- query: Barolo 2027
+  expected_pass: false
+  reason_code: future_vintage
+  notes: Unrealistic or contradictory constraints
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: fail_17
+- query: Bordeaux Grand Cru from Burgundy 2010
+  expected_pass: false
+  reason_code: conflicting_regions_classes
+  notes: Unrealistic or contradictory constraints
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: fail_18
+- query: Sauternes 17% ABV dry red 2011
+  expected_pass: false
+  reason_code: contradictory_style_terms
+  notes: Unrealistic or contradictory constraints
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: fail_19
+- query: Marlborough Sancerre 2022
+  expected_pass: false
+  reason_code: conflicting_regions
+  notes: Unrealistic or contradictory constraints
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: fail_20

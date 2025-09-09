@@ -177,6 +177,7 @@ dependencies = [
     { name = "langchain-google-vertexai" },
     { name = "langchain-openai" },
     { name = "langgraph" },
+    { name = "pyyaml" },
     { name = "tavily-python" },
 ]
 
@@ -202,6 +203,7 @@ requires-dist = [
     { name = "langgraph", specifier = ">=0.2.6" },
     { name = "pytest", marker = "extra == 'test'", specifier = ">=7.0.0" },
     { name = "pytest-asyncio", marker = "extra == 'test'", specifier = ">=0.21.0" },
+    { name = "pyyaml", specifier = ">=6.0.2" },
     { name = "qdrant-client", marker = "extra == 'qdrant'", specifier = ">=1.0.0" },
     { name = "tavily-python", specifier = ">=0.3.0" },
     { name = "tiktoken", marker = "extra == 'qdrant'", specifier = ">=0.7.0" },

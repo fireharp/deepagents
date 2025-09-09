@@ -1,0 +1,203 @@
+cases:
+- wine_query: "Billecart-Salmon Brut Ros\xE9 NV"
+  inventory_name: Billecart Salmon Rose Brut NV
+  inventory_vintage: NV
+  normalized_name: "Billecart-Salmon Brut Ros\xE9 NV"
+  producer: Champagne Billecart-Salmon
+  region: Champagne
+  appellation: Champagne AOC
+  vintage: null
+  grapes: Pinot Noir, Chardonnay, Meunier
+  corrections:
+    fix_brand_spelling:
+      input: Billecart Salmon
+      normalized: Billecart-Salmon
+  notes: Hyphen and accent normalization.
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+    category: tech_facts
+    issue_type: spelling
+  id: billecart_salmom_brut_rose_nv
+  fermentation: null
+  aging: null
+- wine_query: Bodegas Muga Reserva 2019
+  inventory_name: Muga Reserva Rioja
+  inventory_vintage: '2019'
+  normalized_name: Bodegas Muga Rioja Reserva 2019
+  producer: Bodegas Muga
+  region: Rioja
+  appellation: Rioja DOCa
+  vintage: 2019
+  grapes: Tempranillo-dominant blend
+  corrections:
+    add_region_in_name: true
+  notes: Make appellation explicit in normalized name.
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+    category: tech_facts
+    issue_type: name_enrichment
+  id: bodegas_muga_reserva_2019
+  fermentation: null
+  aging: null
+- wine_query: Catena Zapata White Stones Chardonnay 2018
+  inventory_name: Catena White Stones 2018
+  inventory_vintage: '2018'
+  normalized_name: Catena Zapata White Stones Chardonnay 2018
+  producer: Catena Zapata
+  region: Mendoza
+  appellation: IG
+  vintage: 2018
+  grapes: Chardonnay 100%
+  corrections:
+    add_variety_to_name: true
+  notes: Include Chardonnay in normalized name for specificity.
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+    category: tech_facts
+    issue_type: name_enrichment
+  id: catena_zapata_white_stones_2018
+  fermentation: null
+  aging: null
+- wine_query: Dauvissat Chablis 1er Cru Vaillons 2020
+  inventory_name: R. Dauvissat Vaillons 1er 2020
+  inventory_vintage: '2020'
+  normalized_name: "Domaine Ren\xE9 et Vincent Dauvissat Chablis 1er Cru Vaillons\
+    \ 2020"
+  producer: "Domaine Ren\xE9 et Vincent Dauvissat"
+  region: Burgundy
+  appellation: Chablis AOC
+  vintage: 2020
+  grapes: Chardonnay 100%
+  corrections:
+    expand_producer: true
+  notes: Expand producer to full canonical name.
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+    category: tech_facts
+    issue_type: normalization
+  id: chablis_dauvissat_vaillons_2020
+  fermentation: null
+  aging: null
+- wine_query: "Ch\xE2teau Musar Red 2015"
+  inventory_name: Ch Musar 2015
+  inventory_vintage: '2015'
+  normalized_name: "Ch\xE2teau Musar Red 2015"
+  producer: "Ch\xE2teau Musar"
+  region: Bekaa Valley
+  appellation: Lebanon
+  vintage: 2015
+  grapes: Cabernet Sauvignon, Cinsault, Carignan
+  corrections:
+    expand_abbrev:
+      Ch: "Ch\xE2teau"
+  notes: "Use full 'Ch\xE2teau'. Region as Bekaa; country as Lebanon in appellation\
+    \ field here."
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+    category: tech_facts
+    issue_type: abbreviation
+  id: chateau_musar_2015
+  fermentation: null
+  aging: null
+- wine_query: Clos Mogador Priorat 2018
+  inventory_name: Clos Mogador 2018
+  inventory_vintage: '2018'
+  normalized_name: Clos Mogador Priorat 2018
+  producer: Clos Mogador
+  region: Catalonia
+  appellation: Priorat DOQ
+  vintage: 2018
+  grapes: Garnacha-led blend
+  corrections:
+    appellation_synonym:
+      input: DOCa
+      normalized: DOQ
+  notes: In Catalonia, 'DOQ' is used; normalize synonyms.
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+    category: tech_facts
+    issue_type: synonym_normalization
+  id: clos_mogador_2018
+  fermentation: null
+  aging: null
+- wine_query: "Cristom Pinot Noir Mt. Jefferson Cuv\xE9e 2021"
+  inventory_name: Cristom Mt Jefferson 2021
+  inventory_vintage: '2021'
+  normalized_name: "Cristom Mt. Jefferson Cuv\xE9e Pinot Noir 2021"
+  producer: Cristom
+  region: Willamette Valley AVA
+  appellation: Oregon
+  vintage: 2021
+  grapes: Pinot Noir 100%
+  corrections:
+    add_cuvee_unicode:
+      input: Cuvee
+      normalized: "Cuv\xE9e"
+  notes: "Add diacritic for 'Cuv\xE9e'."
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+    category: tech_facts
+    issue_type: diacritics
+  id: cristom_mt_jeffereson_cuvee_2021
+  fermentation: null
+  aging: null
+- wine_query: Domaine Huet Vouvray Le Mont Sec 2019
+  inventory_name: Vouvray Le Mont Sec - Huet
+  inventory_vintage: '2019'
+  normalized_name: Domaine Huet Vouvray Le Mont Sec 2019
+  producer: Domaine Huet
+  region: Loire Valley
+  appellation: Vouvray AOC
+  vintage: 2019
+  grapes: Chenin Blanc 100%
+  corrections:
+    spelling_normalized: true
+  notes: "Inventory sometimes lists 'Huet Le Mont Sec'\u2014normalize to producer-first\
+    \ standard."
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+    category: tech_facts
+    issue_type: normalization
+  id: domaine_huet_le_mont_sec_2019
+  fermentation: null
+  aging: null
+- wine_query: Domaine Leflaive Puligny-Montrachet 1er Cru Les Pucelles 2017
+  inventory_name: Leflaive Puligny Pucelles 1er 2017
+  inventory_vintage: '2017'
+  normalized_name: Domaine Leflaive Puligny-Montrachet 1er Cru Les Pucelles 2017
+  producer: Domaine Leflaive
+  region: Burgundy
+  appellation: Puligny-Montrachet AOC
+  vintage: 2017
+  grapes: Chardonnay 100%
+  corrections:
+    expand_acronyms:
+      1er: Premier
+  notes: Keep climat 'Les Pucelles' and cru level consistent.
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+    category: tech_facts
+    issue_type: formatting
+  id: domaine_leflaive_puligny_pucelles_2017
+  fermentation: null
+  aging: null
+- wine_query: Domaine Ostertag Pinot Gris Heissenstein 2021
+  inventory_name: Ostertag Heissenstein PG 2021
+  inventory_vintage: '2021'
+  normalized_name: Domaine Ostertag Heissenstein Pinot Gris 2021
+  producer: Domaine Ostertag
+  region: Alsace
+  appellation: Alsace AOC
+  vintage: 2021
+  grapes: Pinot Gris 100%
+  corrections:
+    expand_var_abbrev:
+      PG: Pinot Gris
+  notes: Expand 'PG' to full variety name.
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+    category: tech_facts
+    issue_type: abbreviation
+  id: domaine_ostertag_heissenstein_2021
+  fermentation: null
+  aging: null

@@ -1,0 +1,71 @@
+cases:
+- query: "Domaine Tempier Bandol Ros\xE9 2023"
+  expected_pass: true
+  reason_code: specific_wine_vintage
+  notes: Realistic, specific query
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: pass_01
+- query: Domaine Huet Vouvray Le Mont Sec 2019
+  expected_pass: true
+  reason_code: specific_wine_vintage
+  notes: Realistic, specific query
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: pass_02
+- query: Gaja Barbaresco 2019
+  expected_pass: true
+  reason_code: specific_wine_vintage
+  notes: Realistic, specific query
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: pass_03
+- query: Ridge Monte Bello 2018
+  expected_pass: true
+  reason_code: specific_wine_vintage
+  notes: Realistic, specific query
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: pass_04
+- query: Domaine Leflaive Puligny-Montrachet Les Pucelles 2017
+  expected_pass: true
+  reason_code: specific_wine_vintage
+  notes: Realistic, specific query
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: pass_05
+- query: "Produttori del Barbaresco Rabaj\xE0 Riserva 2018"
+  expected_pass: true
+  reason_code: specific_wine_vintage
+  notes: Realistic, specific query
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: pass_06
+- query: Bodegas Muga Rioja Reserva 2019
+  expected_pass: true
+  reason_code: specific_wine_vintage
+  notes: Realistic, specific query
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: pass_07
+- query: Clos Mogador Priorat 2018
+  expected_pass: true
+  reason_code: specific_wine_vintage
+  notes: Realistic, specific query
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: pass_08
+- query: Catena Zapata White Stones Chardonnay 2018
+  expected_pass: true
+  reason_code: specific_wine_vintage
+  notes: Realistic, specific query
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: pass_09
+- query: Pieropan Soave Classico La Rocca 2020
+  expected_pass: true
+  reason_code: specific_wine_vintage
+  notes: Realistic, specific query
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: pass_10

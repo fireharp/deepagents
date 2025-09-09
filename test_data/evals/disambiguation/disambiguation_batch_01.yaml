@@ -1,0 +1,63 @@
+# Disambiguation Evaluation Cases - Batch 01
+# One Exact cases - specific wines that should resolve to exactly one result
+
+cases:
+  - id: "chateau_margaux_1982"
+    query: "Château Margaux 1982"
+    expected_outcome: "one_exact"
+    gold_name: "Château Margaux 1982"
+    notes: "Iconic first growth Bordeaux from a legendary vintage."
+
+  - id: "egon_muller_scharzhofberger_tba_2003"
+    query: "Egon Müller Scharzhofberger Riesling Trockenbeerenauslese 2003"
+    expected_outcome: "one_exact"
+    gold_name: "Egon Müller Scharzhofberger Riesling Trockenbeerenauslese 2003"
+    notes: "Extremely specific German dessert wine."
+
+  - id: "drc_la_tache_2015"
+    query: "Domaine de la Romanée-Conti La Tâche 2015"
+    expected_outcome: "one_exact"
+    gold_name: "Domaine de la Romanée-Conti La Tâche 2015"
+    notes: "Specific vineyard monopoly from a top Burgundy producer."
+
+  - id: "vega_sicilia_unico_1995"
+    query: "Vega Sicilia Único 1995"
+    expected_outcome: "one_exact"
+    gold_name: "Vega Sicilia Único 1995"
+    notes: "Spain's most famous wine from a specific vintage."
+
+  - id: "krug_clos_du_mesnil_2008"
+    query: "Krug Clos du Mesnil 2008"
+    expected_outcome: "one_exact"
+    gold_name: "Krug Clos du Mesnil 2008"
+    notes: "Single vineyard, single grape, single vintage Champagne."
+
+  - id: "gaja_barbaresco_2017"
+    query: "Gaja Barbaresco 2017"
+    expected_outcome: "one_exact"
+    gold_name: "Gaja Barbaresco 2017"
+    notes: "Well-known producer, wine, and vintage from Piedmont."
+
+  - id: "caymus_special_selection_2018"
+    query: "Caymus Special Selection Cabernet Sauvignon 2018"
+    expected_outcome: "one_exact"
+    gold_name: "Caymus Special Selection Cabernet Sauvignon 2018"
+    notes: "Popular high-end Napa Cabernet with a specific designation."
+
+  - id: "opus_one_2016"
+    query: "Opus One 2016"
+    expected_outcome: "one_exact"
+    gold_name: "Opus One 2016"
+    notes: "Napa Valley icon with a specific vintage."
+
+  - id: "chateau_musar_1999"
+    query: "Château Musar 1999"
+    expected_outcome: "one_exact"
+    gold_name: "Château Musar 1999"
+    notes: "Cult wine from Lebanon with a specific vintage."
+
+  - id: "cloudy_bay_te_koko_2019"
+    query: "Cloudy Bay Te Koko 2019"
+    expected_outcome: "one_exact"
+    gold_name: "Cloudy Bay Te Koko 2019"
+    notes: "Specific barrel-fermented Sauvignon Blanc from a well-known producer."

@@ -1,0 +1,53 @@
+# Disambiguation Evaluation Cases - Batch 03
+# Overcommit cases - impossible, contradictory, or overly specific queries
+
+cases:
+  - id: "full_moon_harvest_napa"
+    query: "A 2018 Napa Cabernet that was harvested on a full moon and aged in barrels made from a specific tree in the Tronçais forest."
+    expected_outcome: "overcommit"
+    notes: "Harvest date details and specific barrel origins are usually not searchable."
+
+  - id: "jefferson_lafite_1787"
+    query: "Château Lafite Rothschild 1787 that was owned by Thomas Jefferson"
+    expected_outcome: "overcommit"
+    notes: "Provenance is not a searchable attribute for the wine's technical details."
+
+  - id: "strawberry_not_raspberry_burgundy"
+    query: "A Pinot Noir from Burgundy that tastes like strawberries but not raspberries, with a hint of mushroom."
+    expected_outcome: "overcommit"
+    notes: "Highly subjective tasting notes are not reliable search criteria."
+
+  - id: "vegan_chianti_tuesday_bottling"
+    query: "A vegan Chianti Classico from 2019 that was bottled on a Tuesday."
+    expected_outcome: "overcommit"
+    notes: "Bottling day of the week is not recorded or searchable."
+
+  - id: "wedding_wine_precise_alcohol"
+    query: "A Spanish red wine with exactly 14.2% alcohol, served at my cousin's wedding last year."
+    expected_outcome: "overcommit"
+    notes: "Precise alcohol level and personal events are not searchable criteria."
+
+  - id: "oldest_vine_france"
+    query: "A wine from the oldest vine in France."
+    expected_outcome: "overcommit"
+    notes: "While interesting, 'oldest vine' is not a standard search filter and is debatable."
+
+  - id: "never_rated_sauvignon_blanc"
+    query: "A Sauvignon Blanc from Marlborough that has never been rated by a critic."
+    expected_outcome: "overcommit"
+    notes: "Absence of a rating is not a searchable attribute."
+
+  - id: "contradictory_red_white"
+    query: "A red wine that is also white"
+    expected_outcome: "overcommit"
+    notes: "Mutually exclusive categories."
+
+  - id: "unoaked_aged_oak"
+    query: "An unoaked Chardonnay from California that was aged in new French oak barrels"
+    expected_outcome: "overcommit"
+    notes: "Contradictory winemaking information."
+
+  - id: "impossible_timeline"
+    query: "A 2020 vintage wine that was bottled in 2019"
+    expected_outcome: "overcommit"
+    notes: "Impossible timeline."

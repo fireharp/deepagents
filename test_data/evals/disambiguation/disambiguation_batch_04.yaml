@@ -1,0 +1,71 @@
+cases:
+- query: "Domaine de la Roman\xE9e-Conti Montrachet 2018"
+  expected_outcome: one_exact
+  notes: Specific producer/wine/vintage
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  gold_name: "Domaine de la Roman\xE9e-Conti Montrachet 2018"
+  id: one_exact_01
+- query: "Ch\xE2teau d'Yquem 2001"
+  expected_outcome: one_exact
+  notes: Specific producer/wine/vintage
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  gold_name: "Ch\xE2teau d'Yquem 2001"
+  id: one_exact_02
+- query: "Ch\xE2teau Lafite Rothschild Pauillac 2016"
+  expected_outcome: one_exact
+  notes: Specific producer/wine/vintage
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  gold_name: "Ch\xE2teau Lafite Rothschild Pauillac 2016"
+  id: one_exact_03
+- query: Domaine Armand Rousseau Chambertin 2019
+  expected_outcome: one_exact
+  notes: Specific producer/wine/vintage
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  gold_name: Domaine Armand Rousseau Chambertin 2019
+  id: one_exact_04
+- query: Ridge Monte Bello 2018
+  expected_outcome: one_exact
+  notes: Specific producer/wine/vintage
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  gold_name: Ridge Monte Bello 2018
+  id: one_exact_05
+- query: Gaja Barbaresco 2019
+  expected_outcome: one_exact
+  notes: Specific producer/wine/vintage
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  gold_name: Gaja Barbaresco 2019
+  id: one_exact_06
+- query: "Produttori del Barbaresco Rabaj\xE0 Riserva 2018"
+  expected_outcome: one_exact
+  notes: Specific producer/wine/vintage
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  gold_name: "Produttori del Barbaresco Rabaj\xE0 Riserva 2018"
+  id: one_exact_07
+- query: Domaine Leflaive Puligny-Montrachet Les Pucelles 2017
+  expected_outcome: one_exact
+  notes: Specific producer/wine/vintage
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  gold_name: Domaine Leflaive Puligny-Montrachet Les Pucelles 2017
+  id: one_exact_08
+- query: "Vega Sicilia \xDAnico 2011"
+  expected_outcome: one_exact
+  notes: Specific producer/wine/vintage
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  gold_name: "Vega Sicilia \xDAnico 2011"
+  id: one_exact_09
+- query: Domaine Huet Le Mont Sec 2019
+  expected_outcome: one_exact
+  notes: Specific producer/wine/vintage
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  gold_name: Domaine Huet Le Mont Sec 2019
+  id: one_exact_10

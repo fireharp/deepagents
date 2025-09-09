@@ -1,0 +1,71 @@
+cases:
+- query: "Nicolas Joly Coul\xE9e de Serrant 2019"
+  expected_pass: true
+  reason_code: specific_wine_vintage
+  notes: Realistic, specific query
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: pass_11
+- query: "Ch\xE2teau d'Yquem 2001"
+  expected_pass: true
+  reason_code: specific_wine_vintage
+  notes: Realistic, specific query
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: pass_12
+- query: "Vega Sicilia \xDAnico 2011"
+  expected_pass: true
+  reason_code: specific_wine_vintage
+  notes: Realistic, specific query
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: pass_13
+- query: "Cristom Mt. Jefferson Cuv\xE9e Pinot Noir 2021"
+  expected_pass: true
+  reason_code: specific_wine_vintage
+  notes: Realistic, specific query
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: pass_14
+- query: Wachter-Wiesler Eisenberg Ried Schlossberg 2019
+  expected_pass: true
+  reason_code: specific_wine_vintage
+  notes: Realistic, specific query
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: pass_15
+- query: Domaine Ostertag Pinot Gris Heissenstein 2021
+  expected_pass: true
+  reason_code: specific_wine_vintage
+  notes: Realistic, specific query
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: pass_16
+- query: Chablis 1er Cru Vaillons Dauvissat 2020
+  expected_pass: true
+  reason_code: specific_wine_vintage
+  notes: Realistic, specific query
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: pass_17
+- query: "Fran\xE7ois Cotat Sancerre Les Monts Damn\xE9s 2019"
+  expected_pass: true
+  reason_code: specific_wine_vintage
+  notes: Realistic, specific query
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: pass_18
+- query: "Ch\xE2teau Musar Red 2015"
+  expected_pass: true
+  reason_code: specific_wine_vintage
+  notes: Realistic, specific query
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: pass_19
+- query: "Billecart-Salmon Brut Ros\xE9 NV"
+  expected_pass: true
+  reason_code: specific_brand_style_nonvintage
+  notes: Realistic, specific query
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: pass_20

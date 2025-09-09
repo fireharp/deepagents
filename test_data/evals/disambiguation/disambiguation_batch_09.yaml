@@ -1,0 +1,61 @@
+cases:
+- query: Marlborough Sancerre 2022
+  expected_outcome: overcommit
+  notes: Conflicting or non-existent constraints
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: overcommit_11
+- query: Hermitage GSM blend 2018
+  expected_outcome: overcommit
+  notes: Conflicting or non-existent constraints
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: overcommit_12
+- query: Pomerol 100% Sangiovese 2012
+  expected_outcome: overcommit
+  notes: Conflicting or non-existent constraints
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: overcommit_13
+- query: "Tokaji Asz\xFA Champagne Method 6 Puttonyos Brut 2007"
+  expected_outcome: overcommit
+  notes: Conflicting or non-existent constraints
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: overcommit_14
+- query: Rioja Gran Reserva carbonic maceration Nouveau 2020
+  expected_outcome: overcommit
+  notes: Conflicting or non-existent constraints
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: overcommit_15
+- query: Cava Traditional Method from Champagne AOC 2016
+  expected_outcome: overcommit
+  notes: Conflicting or non-existent constraints
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: overcommit_16
+- query: Chianti Classico from Barossa Valley 2015
+  expected_outcome: overcommit
+  notes: Conflicting or non-existent constraints
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: overcommit_17
+- query: Vouvray made from Chardonnay 2019
+  expected_outcome: overcommit
+  notes: Conflicting or non-existent constraints
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: overcommit_18
+- query: Pfalz Sherry Oloroso 1990
+  expected_outcome: overcommit
+  notes: Conflicting or non-existent constraints
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: overcommit_19
+- query: "C\xF4te-R\xF4tie 100% Grenache 2018"
+  expected_outcome: overcommit
+  notes: Conflicting or non-existent constraints
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+  id: overcommit_20

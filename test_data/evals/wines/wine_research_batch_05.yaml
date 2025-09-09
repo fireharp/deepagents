@@ -1,0 +1,199 @@
+cases:
+- wine_query: "Domaine Tempier Bandol Ros\xE9 2023"
+  inventory_name: Tempier Bandol Rose
+  inventory_vintage: '2023'
+  normalized_name: "Domaine Tempier Bandol Ros\xE9 2023"
+  producer: Domaine Tempier
+  region: Provence
+  appellation: Bandol AOC
+  vintage: 2023
+  grapes: "Mourv\xE8dre-led ros\xE9 blend"
+  corrections:
+    accent_added:
+    - "Ros\xE9"
+  notes: "Ensure accent on Ros\xE9; Bandol ros\xE9 typically Mourv\xE8dre-led."
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+    category: tech_facts
+    issue_type: diacritics
+  id: domaine_tempier_bandol_rose_2023
+  fermentation: null
+  aging: null
+- wine_query: "Wachter-Wiesler Blaufr\xE4nkisch Eisenberg DAC Ried Schlossberg 2019"
+  inventory_name: Wachter Wiesler Eisenberg Schlossberg 2019
+  inventory_vintage: '2019'
+  normalized_name: "Wachter-Wiesler Eisenberg DAC Ried Schlossberg Blaufr\xE4nkisch\
+    \ 2019"
+  producer: Wachter-Wiesler
+  region: Burgenland
+  appellation: Eisenberg DAC
+  vintage: 2019
+  grapes: "Blaufr\xE4nkisch 100%"
+  corrections:
+    add_umlaut:
+      input: Blaufrankisch
+      normalized: "Blaufr\xE4nkisch"
+  notes: Keep DAC and Ried (vineyard) explicit; fix diacritics.
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+    category: tech_facts
+    issue_type: diacritics
+  id: domaine_wachter_wiesler_schlossberg_2019
+  fermentation: null
+  aging: null
+- wine_query: Gaja Barbaresco 2019
+  inventory_name: GAJA Barbaresco
+  inventory_vintage: '2019'
+  normalized_name: Gaja Barbaresco 2019
+  producer: Gaja
+  region: Piedmont
+  appellation: Barbaresco DOCG
+  vintage: 2019
+  grapes: Nebbiolo 100%
+  corrections:
+    case_normalized: true
+  notes: Normalize brand casing to 'Gaja'.
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+    category: tech_facts
+    issue_type: casing
+  id: gaja_barbaresco_2019
+  fermentation: null
+  aging: null
+- wine_query: "Hugel Riesling Grossi La\xFCe 2018"
+  inventory_name: Hugel Riesling Grossi Laue 2018
+  inventory_vintage: '2018'
+  normalized_name: "Hugel Riesling Grossi La\xFCe 2018"
+  producer: Famille Hugel
+  region: Alsace
+  appellation: Alsace AOC
+  vintage: 2018
+  grapes: Riesling 100%
+  corrections:
+    umlaut_added:
+      input: Laue
+      normalized: "La\xFCe"
+  notes: "Add diaeresis per cuv\xE9e style."
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+    category: tech_facts
+    issue_type: diacritics
+  id: hugel_riesling_grossi_lauri_2018
+  fermentation: null
+  aging: null
+- wine_query: Luis Seabra Xisto Ilimitado 2019
+  inventory_name: Seabra Xisto Ilimitado Douro 2019
+  inventory_vintage: '2019'
+  normalized_name: Luis Seabra Xisto Ilimitado Douro 2019
+  producer: Luis Seabra
+  region: Douro
+  appellation: Douro DOC
+  vintage: 2019
+  grapes: Field blend of indigenous varieties
+  corrections:
+    add_region_in_name: true
+  notes: Add Douro region explicitly.
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+    category: tech_facts
+    issue_type: name_enrichment
+  id: luis_seabra_xisto_ilimitado_2019
+  fermentation: null
+  aging: null
+- wine_query: Pieropan Soave Classico La Rocca 2020
+  inventory_name: Pieropan La Rocca Soave 2020
+  inventory_vintage: '2020'
+  normalized_name: Pieropan Soave Classico La Rocca 2020
+  producer: Pieropan
+  region: Veneto
+  appellation: Soave Classico DOC
+  vintage: 2020
+  grapes: Garganega 100%
+  corrections: {}
+  notes: Maintain 'Classico' designation.
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+    category: tech_facts
+    issue_type: none
+  id: pieropan_soave_classico_la_rocca_2020
+  fermentation: null
+  aging: null
+- wine_query: "Produttori del Barbaresco Riserva Rabaj\xE0 2018"
+  inventory_name: Produttori Barbaresco Rabaja Ris.
+  inventory_vintage: '2018'
+  normalized_name: "Produttori del Barbaresco Rabaj\xE0 Riserva 2018"
+  producer: Produttori del Barbaresco
+  region: Piedmont
+  appellation: Barbaresco DOCG
+  vintage: 2018
+  grapes: Nebbiolo 100%
+  corrections:
+    vigneto_spelling:
+      input: Rabaja
+      normalized: "Rabaj\xE0"
+  notes: Normalize single-vineyard accent; ensure Riserva placement.
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+    category: tech_facts
+    issue_type: spelling_accent
+  id: produttori_barbaresco_rabaja_2018
+  fermentation: null
+  aging: null
+- wine_query: "Ra\xFAl P\xE9rez Bierzo La Clave 2020"
+  inventory_name: Raul Perez La Clave 2020
+  inventory_vintage: '2020'
+  normalized_name: "Ra\xFAl P\xE9rez La Clave Bierzo 2020"
+  producer: "Ra\xFAl P\xE9rez"
+  region: "Castilla y Le\xF3n"
+  appellation: Bierzo DO
+  vintage: 2020
+  grapes: "Menc\xEDa 100%"
+  corrections:
+    accent_added:
+    - "Ra\xFAl"
+    - "Menc\xEDa"
+  notes: Add accents for proper names; include DO.
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+    category: tech_facts
+    issue_type: diacritics
+  id: raul_perez_la_clave_2020
+  fermentation: null
+  aging: null
+- wine_query: Ridge Monte Bello 2018
+  inventory_name: Ridge Monte Bello
+  inventory_vintage: '2018'
+  normalized_name: Ridge Monte Bello 2018
+  producer: Ridge Vineyards
+  region: Santa Cruz Mountains AVA
+  appellation: California
+  vintage: 2018
+  grapes: Cabernet Sauvignon-led Bordeaux blend
+  corrections: {}
+  notes: Classic CA Bordeaux-style blend; retain AVA in region field.
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+    category: tech_facts
+    issue_type: none
+  id: ridge_monte_bello_2018
+  fermentation: null
+  aging: null
+- wine_query: I Vigneri di Salvo Foti Etna Rosso 2019
+  inventory_name: Salvo Foti Etna Rosso 2019
+  inventory_vintage: '2019'
+  normalized_name: I Vigneri di Salvo Foti Etna Rosso 2019
+  producer: I Vigneri di Salvo Foti
+  region: Sicily
+  appellation: Etna DOC
+  vintage: 2019
+  grapes: Nerello Mascalese 90%+, Nerello Cappuccio
+  corrections:
+    expand_estate_name: true
+  notes: Use full estate name; include DOC.
+  metadata:
+    source: synthetic_eval_v2_2025-09-09T13-22-14
+    category: tech_facts
+    issue_type: normalization
+  id: salvo_foti_ietna_rosso_2019
+  fermentation: null
+  aging: null

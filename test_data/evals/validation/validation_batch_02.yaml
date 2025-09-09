@@ -1,0 +1,63 @@
+# Validation Evaluation Cases - Batch 02
+# Should Fail cases - invalid or nonsensical wine queries
+
+cases:
+  - id: "wine_from_apples_oranges"
+    query: "Wine made from apples and oranges"
+    expected_pass: false
+    reason_code: "not_grape_based"
+    notes: "Wine is made from grapes; this is a fruit cider/wine query, not for this system."
+
+  - id: "wine_make_me_fly"
+    query: "A wine that can make me fly"
+    expected_pass: false
+    reason_code: "impossible_request"
+    notes: "A nonsensical request with magical properties."
+
+  - id: "best_wine_entire_world"
+    query: "The best wine in the entire world"
+    expected_pass: false
+    reason_code: "subjective_unanswerable"
+    notes: "Best is subjective and impossible to determine definitively."
+
+  - id: "wine_from_1200"
+    query: "A wine from the year 1200"
+    expected_pass: false
+    reason_code: "impossible_vintage"
+    notes: "No wine from that year would exist today for consumption or data."
+
+  - id: "chardonnay_antarctica"
+    query: "Chardonnay from Antarctica"
+    expected_pass: false
+    reason_code: "impossible_location"
+    notes: "Grapes cannot be grown in Antarctica."
+
+  - id: "wine_100_percent_alcohol"
+    query: "A wine with 100% alcohol content"
+    expected_pass: false
+    reason_code: "impossible_attribute"
+    notes: "Ethanol is not wine."
+
+  - id: "julius_caesar_favorite"
+    query: "What was Julius Caesar's favorite wine?"
+    expected_pass: false
+    reason_code: "unverifiable_historical_fact"
+    notes: "Impossible to know or verify."
+
+  - id: "blue_wine"
+    query: "A wine that is blue in color"
+    expected_pass: false
+    reason_code: "impossible_attribute"
+    notes: "Wine is not naturally blue."
+
+  - id: "wine_no_taste"
+    query: "Find me a wine that has no taste"
+    expected_pass: false
+    reason_code: "nonsensical_request"
+    notes: "A contradictory and nonsensical query."
+
+  - id: "unicorn_grape"
+    query: "A wine made from the 'Unicorn' grape"
+    expected_pass: false
+    reason_code: "nonexistent_grape"
+    notes: "This grape variety does not exist."

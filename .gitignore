@@ -208,3 +208,5 @@ __marimo__/
 
 # LangGraph
 .langgraph_api
+
+vertex-service-account.json

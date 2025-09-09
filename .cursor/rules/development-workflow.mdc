@@ -8,12 +8,14 @@ description: Development workflow and code quality rules
 ## Code Quality Standards
 
 ### Testing Requirements
+
 - **Test everything before showing** - no exceptions
 - Use either unit tests or e2e tests
 - Test files in [tests/](mdc:tests/) directory
 - Run tests with: `uv run pytest tests/ -v`
 
 ### Code Style
+
 - Follow existing code patterns in the codebase
 - Use type hints consistently
 - Format with Black-style formatting (double quotes, etc.)
@@ -22,11 +24,13 @@ description: Development workflow and code quality rules
 ## Debugging Philosophy
 
 ### Evidence-Based Debugging
+
 - **Never guess** - always prove issues with code, tests, or logging
 - When encountering bugs: create hypothesis → add debug logs → prove with data
 - Workflow: User reports error → Add logging → User provides logs → Fix with tests
 
 ### Assumptions Policy
+
 - **Make no assumptions** without data to back them up
 - Add logging/debug output to verify theories
 - Create tests to validate fixes
@@ -34,11 +38,13 @@ description: Development workflow and code quality rules
 ## Error Handling
 
 ### User Experience
+
 - Always check if you have access to files before asking user to "ensure"
 - Provide specific, actionable error messages
 - Include context about what was attempted and why it failed
 
 ### Model Consistency
+
 - **Never change user's model configurations** (e.g., `model="gpt-5-mini"`)
 - Respect existing API keys and endpoints
 - Maintain compatibility with user's setup
@@ -46,6 +52,7 @@ description: Development workflow and code quality rules
 ## Progress Documentation
 
 ### PROGRESS.md Format
+
 ```
 TS: [timestamp from `date "+%Y-%m-%d %H:%M:%S %Z"`]
 -----
